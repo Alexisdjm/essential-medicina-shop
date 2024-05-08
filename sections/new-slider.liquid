@@ -115,7 +115,7 @@
   
     function goToSlide(slideIndex) {
       currentSlide = slideIndex;
-      const slideOffset = -currentSlide * 50 * slidesToShow;
+      const slideOffset = -currentSlide * 100;
       console.log(slidesToShow, slideWidth, currentSlide, slideOffset)
       slider.style.transform = `translateX(${slideOffset}vw)`;
   
