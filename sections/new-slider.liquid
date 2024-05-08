@@ -136,7 +136,7 @@
     setInterval(() => {
       currentSlide = (currentSlide + 1) % Math.ceil(totalSlides / slidesToShow);
       goToSlide(currentSlide);
-    }, 7500);
+    }, 10000);
   
     prevButton.addEventListener("click", () => {
       currentSlide = (currentSlide - 1 + Math.ceil(totalSlides / slidesToShow)) % Math.ceil(totalSlides / slidesToShow);

@@ -165,7 +165,7 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
   display: flex;
   gap:0;
   width: fit-content;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .new-slider--block-box {
