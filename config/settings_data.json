@@ -1226,15 +1226,8 @@
           "icon_8BbU44": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/Outline_00000096737887794388991420000015328465065648881541.png",
-              "block_text": "Equipment"
-            }
-          },
-          "icon_kjtUzf": {
-            "type": "icon",
-            "settings": {
-              "block_image": "shopify:\/\/shop_images\/Outline_00000096737887794388991420000015328465065648881541.png",
-              "block_text": "Equipment"
+              "block_image": "shopify:\/\/shop_images\/testing.png",
+              "block_text": "Testing"
             }
           }
         },
@@ -1244,8 +1237,7 @@
           "icon_8DaUbb",
           "icon_brGJec",
           "icon_LTBVrp",
-          "icon_8BbU44",
-          "icon_kjtUzf"
+          "icon_8BbU44"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Screenshot_2024-04-04_at_11.04_1-removebg-preview.png",
