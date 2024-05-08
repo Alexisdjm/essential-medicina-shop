@@ -276,12 +276,13 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
     left: -2em;
   }
 
-}
-
-@media only screen and (max-width: 767px) {
   .custom-block--content-bx {
     margin: 0 auto;
   }
+
+}
+
+@media only screen and (max-width: 767px) {
 
   .custom-box--content-aligner {
       align-items: center;
