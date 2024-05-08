@@ -1,0 +1,506 @@
+<div
+  class="homepage-sections-wrapper homepage-sections-wrapper--{{ section.settings.colors }}"
+  data-wetheme-section-type="collection--featured-collection" data-wetheme-section-id="{{ section.id }}"
+>
+
+<div class="wrapper show-on-scroll">
+
+  <div class="homepage-indiv-section-wrapper grid--full homepage-featured-content-wrapper">
+
+  {% if section.settings.title != blank or section.settings.richtext != blank %}
+    <div class="homepage-featured-rich-text">
+      <div class="page-width featured-products-wrapper">
+        {% if section.settings.title != blank %}
+            <div class="sitewide--title-wrapper">
+              {% if section.settings.show_icon %}
+                <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" width="61.65" height="26.907" viewBox="0 0 61.65 26.907">
+                  <g id="Grupo_4370" data-name="Grupo 4370" transform="translate(-2123.893 -210.868)">
+                    <path id="Trazado_1779" data-name="Trazado 1779" d="M2185.085,226.839l-15.3,6.169a1.125,1.125,0,0,1,.054-.12q.943-1.394,1.886-2.788,1.746-2.577,3.494-5.153t3.515-5.167c.08-.118.112-.19-.029-.3a3.352,3.352,0,0,1-.4-.436l-2.185,1.765c-.327.264-.651.53-.978.793-.643.516-1.29,1.027-1.931,1.544-.5.4-.99.812-1.489,1.214-.671.541-1.347,1.076-2.019,1.617-.481.388-.958.783-1.439,1.171q-1.05.847-2.1,1.689c-.22.176-.442.348-.664.522.4-1.479.834-2.924,1.268-4.369q.839-2.793,1.679-5.586.738-2.451,1.481-4.9c.175-.577.178-.576-.371-.816-.014-.006-.03-.008-.043-.015-.116-.064-.195-.029-.263.08q-.257.406-.526.805-1.407,2.1-2.815,4.2-1.12,1.674-2.236,3.352-.909,1.36-1.822,2.719l-1.062,1.585-.553-.277c0-.241,0-.477,0-.712q-.013-1.324-.028-2.648c-.007-.646-.016-1.292-.021-1.938-.007-.883-.009-1.767-.018-2.65-.006-.638-.025-1.277-.03-1.915-.006-.753,0-1.507,0-2.26,0-.274,0-.549,0-.823q-.01-.889-.026-1.779c0-.125-.02-.249-.031-.376l-1.31-.169-3.75,14.837a3.217,3.217,0,0,0-.388-.043c-.171,0-.241-.09-.291-.237q-1.115-3.29-2.235-6.579-.737-2.166-1.478-4.331c-.354-1.038-.705-2.077-1.064-3.114-.021-.062-.105-.157-.146-.15-.275.044-.546.112-.8.168,0,.517,0,1,0,1.489,0,.373.013.745.022,1.118.017.653.036,1.306.052,1.959.01.41.012.82.024,1.23.018.637.045,1.274.063,1.911.012.41.014.821.024,1.231.016.661.035,1.321.051,1.982.009.395.01.79.021,1.184.013.493.031.986.048,1.479.016.425.039.849.05,1.274.008.3,0,.6,0,.894l-.05.009-9.664-13.109c-.178.1-.334.193-.5.275-.138.069-.151.148-.1.295.329.917.644,1.839.965,2.758.372,1.066.742,2.133,1.118,3.2.591,1.674,1.189,3.346,1.78,5.021.363,1.029.718,2.06,1.075,3.091.118.34.236.68.374,1.079-1.046-.769-2.037-1.5-3.026-2.226q-2.018-1.49-4.033-2.985-2.273-1.683-4.544-3.367c-.515-.382-1.025-.771-1.543-1.149-.062-.046-.2-.09-.23-.062a3.657,3.657,0,0,0-.376.489c-.021.032.008.118.039.161.137.193.283.378.425.567q.724.97,1.446,1.941c.414.556.826,1.114,1.241,1.67.479.641.962,1.278,1.438,1.92s.938,1.277,1.409,1.913.966,1.293,1.448,1.94q.827,1.108,1.652,2.217c.172.232.34.467.509.7a1.171,1.171,0,0,1-.379-.082c-.787-.287-1.573-.578-2.361-.861-1.348-.484-2.7-.962-4.045-1.447-1.062-.383-2.121-.775-3.183-1.158q-2.439-.881-4.881-1.754c-.235-.084-.519-.273-.7-.2s-.263.4-.387.62c-.007.012,0,.03-.006.064.057.044.121.1.188.146.808.575,1.62,1.145,2.425,1.725,1.666,1.2,3.335,2.4,4.991,3.613,1.533,1.126,3.049,2.273,4.571,3.413a1.063,1.063,0,0,1,.153.18h2.943a12.594,12.594,0,0,1,1.167-2.6,12.4,12.4,0,0,1,1.909-2.5c.537-.533,1.073-1.07,1.649-1.557a15.773,15.773,0,0,1,4.619-2.746,14.51,14.51,0,0,1,3.886-.855,14.258,14.258,0,0,1,1.619-.039q1.605.043,3.21.131a18.083,18.083,0,0,1,3.618.588,14.517,14.517,0,0,1,3.645,1.5,12.966,12.966,0,0,1,2.521,1.889c.629.612,1.258,1.232,1.823,1.9a13.613,13.613,0,0,1,2.046,3.265c.151.341.288.688.432,1.033h1.241c.371-.3.738-.614,1.114-.912q5.02-3.97,10.042-7.936l1.837-1.451Z" transform="translate(0 0)" fill="{{ section.settings.color_title }}"/>
+                    <path id="Trazado_1780" data-name="Trazado 1780" d="M2524.693,609.573a13.762,13.762,0,0,0-3.5-1.683,24.069,24.069,0,0,0-2.352-.622,12.812,12.812,0,0,0-3.227-.273c-.908.052-1.82.1-2.718.235a13.269,13.269,0,0,0-3.577,1.077,12.347,12.347,0,0,0-2.715,1.64c-.438.357-.88.709-1.3,1.088a13.72,13.72,0,0,0-2.2,2.563,11.267,11.267,0,0,0-1.11,2.073h27.866a15.476,15.476,0,0,0-1.861-3.032A13.971,13.971,0,0,0,2524.693,609.573Z" transform="translate(-360.72 -377.896)" fill="{{ section.settings.color_title }}"/>
+                  </g>
+                </svg>
+              {% endif %}
+              <h2 class="homepage-sections--title title-section"
+              style="color: {{ section.settings.color_title }}">{{ section.settings.title | escape }}</h2>
+            </div>
+        {% endif %}
+
+        {% if section.settings.richtext != blank %}
+          <div class="rte featured-row__subtext textarea">{{ section.settings.richtext }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  {%- assign collection = collections[section.settings.collection] -%}
+
+  {% case section.settings.grid-desktop%}
+    {% when 2 %}
+      {%- assign desktop_item_width = 'large--one-half' -%}
+      {%- assign image_size = '800x1000' -%}
+    {% when 3 %}
+      {%- assign desktop_item_width = 'large--one-third' -%}
+      {%- assign image_size = '550x750' -%}
+    {% when 4 %}
+      {%- assign desktop_item_width = 'large--one-quarter' -%}
+      {%- assign image_size = '400x' -%}
+    {% when 5 %}
+      {%- assign desktop_item_width = 'large--one-fifth' -%}
+      {%- assign image_size = '300x' -%}
+    {% when 6 %}
+      {%- assign desktop_item_width = 'large--one-sixth' -%}
+      {%- assign image_size = '200x' -%}
+  {% endcase %}
+
+  {% case section.settings.grid-tablet %}
+    {% when 2 %}
+      {%- assign tablet_item_width = 'medium--one-half' -%}
+    {% when 3 %}
+      {%- assign tablet_item_width = 'medium--one-third' -%}
+    {% when 4 %}
+      {%- assign tablet_item_width = 'medium--one-quarter' -%}
+  {% endcase %}
+
+  {% case section.settings.grid-mobile%}
+    {% when 1 %}
+      {%- assign mobile_item_width = 'small--one-whole' -%}
+    {% when 2 %}
+      {%- assign mobile_item_width = 'small--one-half' -%}
+    {% when 3 %}
+      {%- assign mobile_item_width = 'small--one-third' -%}
+  {% endcase %}
+
+  {% assign crop_setting = settings.product-grid %}
+      {% if crop_setting == "square" %}
+          {% assign image_crop = "aspect-ratio--square" %}
+      {% elsif crop_setting == "tall" %}
+          {% assign image_crop = "aspect-ratio--tall" %}
+      {% elsif crop_setting == "wide" %}
+          {% assign image_crop = "aspect-ratio--wide" %}
+      {% else %}
+          {% assign image_crop = false %}
+  {% endif %}
+
+  {%- assign grid_item_width = desktop_item_width | append: ' ' | append: tablet_item_width | append: ' ' | append: mobile_item_width -%}
+
+  {%- assign product_limit = section.settings.grid-desktop | times: section.settings.rows -%}
+
+  <div class="grid-uniform homepage-product-grid-wrapper">
+    {% for product in collection.products limit: product_limit %}
+      {%- assign grid_image_width = image_size -%}
+      {% comment %}
+        Set the default grid_item_width if no variable is set
+      {% endcomment %}
+      {% unless grid_item_width %}
+        {% assign grid_item_width = 'large--one-third medium--one-half' %}
+      {% endunless %}
+
+      {% comment %}
+        Check if the product is on sale and set a variable to be used below.
+      {% endcomment %}
+      {% assign on_sale = false %}
+      {% if product.compare_at_price > product.price %}
+        {% assign on_sale = true %}
+      {% endif %}
+
+      {% comment %}
+        Check if the product is sold out and set a variable to be used below.
+      {% endcomment %}
+      {% assign sold_out = true %}
+      {% if product.available %}
+        {% assign sold_out = false %}
+      {% endif %}
+
+      <div class="grid__item {{ grid_item_width }} featured-product--grid-item">
+
+        <div class="grid-view-item">
+          <div class="grid-view-item-image">
+
+            {% if section.settings.hover-effect %}
+              <div class="reveal">
+            {% endif %}
+
+            <a href="{{ product.url | within: collection }}" title="{{product.title}}" class="grid__image grid__image__match" tabindex="-1">
+                {% if image_crop %}<div class="aspect-ratio {{ image_crop }}">{% endif %}
+                  {% assign image = product.media[0].preview_image %}
+                  {% capture styles %}max-width: {{ image.width }}px{% endcapture %}
+                  {% render 'responsive-image' with image, alt: image.alt, styles: styles, allow_stretch: true %}
+
+                  {% if section.settings.hover-effect and product.media.size > 1 %}
+                    <div class="hidden">
+                      {% assign image = product.media[1].preview_image %}
+                      {% capture styles %}max-width: {{ image.width }}px{% endcapture %}
+                      {% render 'responsive-image' with image, alt: image.alt, styles: styles, allow_stretch: true %}
+                    </div>
+                  {% endif %}
+                {% if image_crop %}</div>{% endif %}
+            </a>
+
+            {% if section.settings.hover-effect %}
+              </div>
+            {% endif %}
+
+            {% if settings.quick_shop_enable %}
+              <div class="shop-now-wrapper">
+                <a class="shop-now-button" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.quick_shop' | t }}</a>
+              </div>
+            {% endif %}
+
+          </div>
+
+          <div class="grid-view-item--desc-wrapper">
+            <div>
+              {% if section.settings.show-vendor %}
+                <div class="product-grid--vendor-text">{{ product.vendor }}</div>
+              {% endif %}
+              <div class="product-grid--title">
+                <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+              </div>
+              <div class="product-grid--price">
+                {% render 'product-grid-item-price', product: product, collection: collection, show_reviews: settings.show_reviews %}
+              </div>
+            </div>
+          </div>
+
+          {% if settings.quick_add_enable %}
+            <div class="quick-add-wrapper{% if product.variants.size == 1 %} is-singular{% endif %}">
+            {% if product.variants.size > 1 and product.available %}
+              <a class="quick-add-button-variants" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.view_options' | t }}</a>
+            {% elsif product.available %}
+              {% form 'product', product, id: "CollectionAddToCartForm" %}
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <button class="quick-add-button" type="submit" tabindex="0">{{ 'products.product.shop_now' | t }}</button>
+              {% endform %}
+            {% else %}
+              <a class="sold-out-button" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.sold_out' | t }}</a>
+            {% endif %}
+            </div>
+          {% endif %}
+
+          {% if product.compare_at_price_max > product.price and product.available and settings.enable-sale-badge %}
+            <div class="sale-badge badge">{{ 'products.product.on_sale' | t }}</div>
+          {% endif %}
+
+          {% if settings.enable-sold-out-badge %}
+            {% unless product.available %}
+              <div class="sold-out-badge badge">{{ 'products.product.sold_out' | t }}</div>
+            {% endunless %}
+          {% endif %}
+
+        </div>
+
+      </div>
+
+    {% else %}
+
+      {% for i in (1..product_limit) %}
+        <div class="grid__item {{ grid_item_width }} featured-product--grid-item">
+          <div class="grid-view-item">
+            <a href="/admin/products" class="grid-view-item__link" tabindex="-1">
+              {% if image_crop %}<div class="aspect-ratio {{ image_crop }}">{% endif %}
+                  <div class="grid-view-item__image">
+                    {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                    {{ 'product-' | append: current | placeholder_svg_tag: 'icon icon--placeholder grid__image' }}
+
+                    {% if settings.quick_shop_enable %}
+                      <div class="shop-now-wrapper">
+                        <a class="shop-now-button-onboarding" href="{{ product.url | within: collection }}">{{ 'products.product.quick_shop' | t }}</a>
+                      </div>
+                    {% endif %}
+
+                  </div>
+              {% if image_crop %}</div>{% endif %}
+              <div class="grid-view-item--desc-wrapper">
+                {% if section.settings.show-vendor %}
+                  <div class="product-grid--vendor-text">{{ 'homepage.onboarding.product_vendor' | t }}</div>
+                {% endif %}
+                  <div class="product-grid--title">{{ 'homepage.onboarding.product_title' | t }}</div>
+                  <div class="product-grid--price"><span class="money">{{ 1999 | money }}</span></div>
+
+                  <div class="judgeme-stars">
+                    {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
+                  </div>
+
+                  {% if settings.show_reviews %}
+                    <span class="spr-badge" id="spr_badge_7826197321" data-rating="5.0">
+                      <span class="spr-starrating spr-badge-starrating">
+                        <i class="spr-icon spr-icon-star"></i>
+                        <i class="spr-icon spr-icon-star"></i>
+                        <i class="spr-icon spr-icon-star"></i>
+                        <i class="spr-icon spr-icon-star"></i>
+                        <i class="spr-icon spr-icon-star"></i>
+                      </span>
+                      <span class="spr-badge-caption">1 review</span>
+                    </span>
+                  {% endif %}
+              </div>
+            </a>
+            {% if settings.quick_add_enable %}
+              <div class="quick-add-wrapper">
+                <a class="quick-add-button-onboarding" tabindex="0" href="{{ product.url | within: collection }}">{{ 'products.product.shop_now' | t }}</a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+
+  {% if section.settings.show_view_all %}
+    <div class="text-center show-view-all--button">
+      <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+        {{ 'collections.general.view_all' | t }}
+      </a>
+    </div>
+  {% endif %}
+
+</div>
+
+</div>
+
+</div>
+
+{% schema %}
+{
+    "name": {
+        "en": "Featured collection",
+        "de": "Vorgestellte Kollektion",
+        "es": "Colección destacada",
+        "fr": "Collection en vedette",
+        "pt-PT": "Coleção em destaque"
+    },
+    "class": "featured-products-wrapper",
+    "settings": [
+        {
+            "type": "select",
+            "id": "colors",
+            "label": {
+                "en": "Color scheme",
+                "de": "Farbschema",
+                "es": "Esquema de colores",
+                "fr": "Palette de couleurs",
+                "pt-PT": "Esquema de cores"
+            },
+            "default": "white",
+            "options": [
+                {
+                    "value": "white",
+                    "label": {
+                        "en": "Minimal",
+                        "fr": "Minimal",
+                        "de": "Minimal",
+                        "es": "Mínimo",
+                        "pt-PT": "Mínimo"
+                    }
+                },
+                {
+                    "value": "light",
+                    "label": {
+                        "en": "Light",
+                        "de": "Licht",
+                        "es": "Luz",
+                        "fr": "Clair",
+                        "pt-PT": "Claro"
+                    }
+                },
+                {
+                    "value": "accent",
+                    "label": {
+                        "en": "Feature",
+                        "de": "Eigenschaft",
+                        "es": "Destacado",
+                        "fr": "Caractéristique",
+                        "pt-PT": "Funcionalidade"
+                    }
+                },
+                {
+                    "value": "dark",
+                    "label": {
+                        "en": "Dark",
+                        "de": "Dunkel",
+                        "es": "Oscuro",
+                        "fr": "Foncé",
+                        "pt-PT": "Escuro"
+                    }
+                }
+            ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_icon",
+          "label": "Show icon",
+          "default": true
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": {
+                "en": "Heading",
+                "de": "Überschrift",
+                "es": "Encabezado",
+                "fr": "Rubrique",
+                "pt-PT": "Título"
+            }
+        },
+        {
+          "type": "color",
+          "id": "color_title",
+          "label": "Color title",
+          "default": "#e2c265"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext",
+            "label": {
+                "en": "Description",
+                "de": "Beschreibung",
+                "es": "Descripción",
+                "fr": "Description",
+                "pt-PT": "Descrição"
+            }
+        },
+        {
+            "id": "collection",
+            "type": "collection",
+            "label": {
+                "en": "Collection",
+                "de": "Kollektion",
+                "es": "Colección",
+                "fr": "Collection",
+                "pt-PT": "Coleção"
+            }
+        },
+        {
+            "type": "header",
+            "content": {
+                "en": "Products per row",
+                "de": "Produkte pro Zeile",
+                "es": "Productos por fila",
+                "fr": "Produits par ligne",
+                "pt-PT": "Produtos por linha"
+            }
+        },
+        {
+            "type": "range",
+            "id": "grid-desktop",
+            "min": 2,
+            "max": 6,
+            "step": 1,
+            "label": {
+                "en": "Desktop",
+                "de": "Desktop",
+                "es": "Escritorio",
+                "fr": "Ordinateur de bureau",
+                "pt-PT": "Ambiente de trabalho"
+            },
+            "default": 4
+        },
+        {
+            "type": "range",
+            "id": "grid-tablet",
+            "min": 2,
+            "max": 4,
+            "step": 1,
+            "label": {
+                "en": "Tablet",
+                "de": "Tablet",
+                "es": "Tablet",
+                "fr": "Tablette",
+                "pt-PT": "Tablet"
+            },
+            "default": 3
+        },
+        {
+            "type": "range",
+            "id": "grid-mobile",
+            "min": 1,
+            "max": 3,
+            "step": 1,
+            "label": {
+                "en": "Mobile",
+                "de": "Mobil",
+                "es": "Móvil",
+                "fr": "Téléphone mobile",
+                "pt-PT": "Telemóvel"
+            },
+            "default": 2
+        },
+        {
+            "type": "range",
+            "id": "rows",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "label": {
+                "en": "Rows",
+                "de": "Zeilen",
+                "es": "Filas",
+                "fr": "Lignes",
+                "pt-PT": "Linhas"
+            },
+            "default": 2
+        },
+        {
+            "type": "checkbox",
+            "id": "hover-effect",
+            "label": {
+                "en": "Enable hover effect",
+                "de": "Hover-Effekt aktivieren",
+                "es": "Habilitar efecto hover",
+                "fr": "Activer l'effet survol",
+                "pt-PT": "Ativar efeito ao passar o rato"
+            },
+            "default": false,
+            "info": {
+                "en": "Shows your products second image on hover",
+                "de": "Zeigt das zweite Bild Ihrer Produkte beim Hover an",
+                "es": "Muestra la segunda imagen de los productos cuando se pasa el ratón por encima",
+                "fr": "Affiche la seconde image de vos produits en survol",
+                "pt-PT": "Mostra a segunda imagem dos seus produtos ao passar o rato"
+            }
+        },
+        {
+            "type": "checkbox",
+            "id": "show-vendor",
+            "label": {
+                "en": "Show vendor",
+                "de": "Verkäufer anzeigen",
+                "es": "Mostrar vendedor",
+                "fr": "Afficher le vendeur",
+                "pt-PT": "Mostrar vendedor"
+            },
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "show_view_all",
+            "label": {
+                "en": "Show 'View all' button",
+                "de": "„Alle ansehen“-Button anzeigen",
+                "es": "Mostrar botón «Ver todos»",
+                "fr": "Afficher le bouton « Voir tout »",
+                "pt-PT": "Mostrar botão \"Ver tudo\""
+            },
+            "default": false
+        }
+    ],
+    "presets": [
+        {
+            "name": {
+                "en": "Featured collection",
+                "de": "Vorgestellte Kollektion",
+                "es": "Colección destacada",
+                "fr": "Collection en vedette",
+                "pt-PT": "Coleção em destaque"
+            },
+            "category": {
+                "en": "Collection",
+                "de": "Kollektion",
+                "es": "Colección",
+                "fr": "Collection",
+                "pt-PT": "Coleção"
+            }
+        }
+    ]
+}
+{% endschema %}

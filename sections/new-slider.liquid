@@ -1,0 +1,270 @@
+<style>
+  .new-slider--dot {
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    border: 0.5px solid {{ section.settings.font_color }};
+  }
+
+  .new-slider--dot.active {
+    background-color: {{ section.settings.font_color }};
+  }
+
+  .new-slider--dots-container {
+    display: flex;
+    gap: 1em;
+    width: fit-content;
+  }
+
+  .new-slider--flex .arrow-slide.next,
+  .new-slider--flex .arrow-slide.prev {
+    fill: {{ section.settings.font_color }} !important;
+  }
+
+  @media only screen and (min-width: 464px) and (max-width: 900px) {
+    .new-slider--block-box {
+      width: 33vw;
+    }
+  }
+
+  @media only screen and (max-width: 463px) {
+    .new-slider--block-box {
+      width: 50vw;
+    }
+  }
+</style>
+
+
+<div class="new-slider--icons-father" style="background-image: url('{{ section.settings.img_bg | img_url: "master" }}')">
+  <div class="new-slider--declassified">
+    <div class="new-slider--flex">
+      <div class="new-slider--titles">
+        <img 
+          class="new-sliderr--small-logo"
+          alt="small logo"
+          loading="lazy"
+          src="{{ section.settings.logo | img_url: "master" }}">
+        <h2 
+          style="font-size: {{ section.settings.title_size }}px;
+          color: {{ section.settings.font_color }}">{{ section.settings.title_text }}</h2>
+        <h4 style="font-size: {{ section.settings.post_title_size }}px;
+          color: {{ section.settings.font_color }}">{{ section.settings.sub_title_text }}</h4>
+      </div>
+      <div class="new-slider--carousel-box">
+        <div class="new-slider--carousel-handler">
+          {% for block in section.blocks %}
+            <div class="new-slider--block-box">
+              <img 
+                class="new-slider--img-block" 
+                src="{{ block.settings.block_image | img_url: "master" }}"
+                alt="new-slider--img"
+                loading="lazy">
+              <h3 
+                style="font-size: {{ section.settings.block_tfont_size }}px;
+                color: {{ section.settings.font_color }}">{{ block.settings.block_text }}</h3>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="new-slider--dots-container"></div>
+      <button id="prev-slide" class="arrow-slide prev">
+        {% render 'slider-arrow' %}
+      </button>
+      <button id="next-slide" class="arrow-slide next">
+        {% render 'slider-arrow' %}
+      </button>
+      <a 
+        class="new-slider--btn"
+        href="{{ section.settings.button_url }}"
+        style="background-color: {{ section.settings.font_color }};
+        font-size: {{ section.settings.button_font_size }}px">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.querySelector(".new-slider--carousel-handler");
+    const slides = document.querySelectorAll(".new-slider--block-box");
+    const dotContainer = document.querySelector(".new-slider--dots-container");
+    const prevButton = document.getElementById("prev-slide");
+    const nextButton = document.getElementById("next-slide");
+    const totalSlides = slides.length;
+    let slidesToShow = 4;
+    const slideWidth = 100 / slidesToShow;
+    let currentSlide = 0;
+
+    if (464 < window.innerWidth && window.innerWidth < 900) {
+      slidesToShow = 3;
+      console.log(totalSlides)
+    } else if (window.innerWidth < 463) {
+      slidesToShow = 2;
+    }
+
+    for (let i = 0; i < Math.ceil(totalSlides / slidesToShow); i++) {
+      const dot = document.createElement("div");
+      dot.className = "new-slider--dot";
+      dotContainer.appendChild(dot);
+  
+      dot.addEventListener("click", () => {
+        goToSlide(i);
+      });
+    }
+  
+    const dots = document.querySelectorAll(".new-slider--dot");
+  
+    function goToSlide(slideIndex) {
+      currentSlide = slideIndex;
+      const slideOffset = -currentSlide * slideWidth * slidesToShow;
+      slider.style.transform = `translateX(${slideOffset}vw)`;
+  
+      updateDots();
+    }
+  
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        dot.classList.remove("active");
+        if (index === currentSlide) {
+          dot.classList.add("active");
+        }
+      });
+    }
+  
+    updateDots();
+  
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % Math.ceil(totalSlides / slidesToShow);
+      goToSlide(currentSlide);
+    }, 7500);
+  
+    prevButton.addEventListener("click", () => {
+      currentSlide = (currentSlide - 1 + Math.ceil(totalSlides / slidesToShow)) % Math.ceil(totalSlides / slidesToShow);
+      goToSlide(currentSlide);
+    });
+  
+    nextButton.addEventListener("click", () => {
+      currentSlide = (currentSlide + 1) % Math.ceil(totalSlides / slidesToShow);
+      goToSlide(currentSlide);
+    });
+});
+
+
+  
+</script>
+
+{% schema %}
+  {
+    "name": "New Slider",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_bg",
+        "label": {
+            "en": "Image",
+            "de": "Bild",
+            "es": "Imagen",
+            "fr": "Image",
+            "pt-PT": "Imagem"
+        }
+      },
+      {
+        "type": "text",
+        "id": "title_text",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "text",
+        "id": "sub_title_text",
+        "label": "Subtitle",
+        "default": "Subtitle"
+      },
+      {
+        "type": "range",
+        "id": "title_size",
+        "min": 16,
+        "max": 80,
+        "step": 4,
+        "default": 20,
+        "unit": "px",
+        "label": "Title Font Size"
+      },
+      {
+        "type": "range",
+        "id": "post_title_size",
+        "min": 16,
+        "max": 36,
+        "step": 2,
+        "default": 20,
+        "unit": "px",
+        "label": "text Size"
+      },
+      {
+        "type": "range",
+        "id": "button_font_size",
+        "min": 12,
+        "max": 36,
+        "step": 2,
+        "default": 16,
+        "unit": "px",
+        "label": "Button Font Size"
+      },
+      {
+        "type": "range",
+        "id": "block_tfont_size",
+        "min": 12,
+        "max": 36,
+        "step": 2,
+        "default": 16,
+        "unit": "px",
+        "label": "Block font Size"
+      },
+      {
+        "type": "color",
+        "id": "font_color",
+        "label": "Section font color",
+        "default": "#000"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icon",
+        "name": "icon Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "block_image",
+            "label": "Block image"
+          },
+          {
+            "type": "text",
+            "id": "block_text",
+            "label": "Block text",
+            "default": "Icon"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "New Slider"
+      }
+    ]
+  }
+{% endschema %}

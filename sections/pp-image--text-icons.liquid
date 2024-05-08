@@ -1,0 +1,96 @@
+{% if product.metafields.image_text_icons.title != blank or product.metafields.image_text_1.description != blank %}
+    {% assign show_image_text_icons = true %}
+{% endif %}
+{% assign show_image_text_used = false %}
+{% if product.metafields.image_text_used.title != blank or product.metafields.image_text_used.description != blank %}
+    {% assign show_image_text_used = true %}
+{% endif %}
+<section class="section section_{{ section.id }}">
+
+	
+ <div class="image_text_icons_wrap">
+	 {% if product.metafields.image_text_icons.maintitle != blank or product.metafields.image_text_icons.header_content != blank %}
+			<div class="wrapper">
+					<div class="sitewide--title-wrapper text-center">
+                      <img src="{{ 'title_icon.png' | asset_url }}" alt="" class="section_title_icon">
+						{% if product.metafields.image_text_icons.maintitle != blank %}		
+							<h2 class="homepage-sections--title title-section">{{ product.metafields.image_text_icons.maintitle }}</h2>
+						{% endif %}
+						{% if product.metafields.image_text_icons.header_content != blank %}		
+							<div class="subtitle-section subtitle-section-content">{{ product.metafields.image_text_icons.header_content }}</div>
+						{% endif %}
+					</div>
+			</div>
+		{% endif %}
+	<div class="wrapper">
+	{% if product.metafields.image_text_icons.image != blank and show_image_text_icons %}
+		<div class="pp-image--text">
+			<div class="pp--image--container">
+				<img src="{{ product.metafields.image_text_icons.image }}" alt="{{ product.metafields.image_text_icons.title }}">
+			</div>
+			<div class="pp--text--container pp--left">
+				{% if product.metafields.image_text_1.title != blank %}
+					<h3 class="metafields-title">{{ product.metafields.image_text_icons.title | upcase }}</h3>
+				{% endif %}
+
+				{% if product.metafields.image_text_icons.description != blank %}
+				 <div class="metafields-description">{{- product.metafields.image_text_icons.description -}}</div>
+				{% endif %}
+
+				<div class="pp--text-icons--container">
+		{% comment %}		{% if product.metafields.image_text_icons.icons != blank %}
+					<img src="{{ product.metafields.image_text_icons.icons }}" alt="{{ product.metafields.image_text_icons.feature }}">
+				{% endif %}
+	{% endcomment %}
+				{% if product.metafields.image_text_icons.feature != blank %}
+					<h5>{{ product.metafields.image_text_icons.feature }}</h5>
+				{% endif %}
+			</div>
+			</div>
+		</div>
+	{% endif %}
+  </div>
+</div>
+
+{% if product.metafields.image_text_used.image != blank or product.metafields.image_text_used.video_iframe != blank and show_image_text_used %}
+
+<div class="image_text_used_wrap">
+
+{% if product.metafields.image_text_used.title != blank %}
+			<div class="wrapper">
+					<div class="sitewide--title-wrapper text-center">
+						{% if product.metafields.image_text_used.title != blank %}
+							<h3 class="metafields-title">{{ product.metafields.image_text_used.title | upcase }}</h3>
+				{% endif %}
+					</div>
+			</div>
+		{% endif %}
+
+	<div class="wrapper">
+	{% if product.metafields.image_text_used.image != blank or product.metafields.image_text_used.video_iframe != blank and show_image_text_used %}
+		<div class="pp-image--text">
+			<div class="pp--text--container pp--usedto pp--left">
+				<div class="descriptions">
+					{% if product.metafields.image_text_used.description != blank %}
+					<div class="metafields-descriptions">{{- product.metafields.image_text_used.description -}}</div>
+					{% endif %}
+				</div>
+			</div>
+			<div class="pp--image--container ">
+			
+			{% if product.metafields.image_text_used.video_iframe != blank %}
+				<div class="video_iframe_wrap">{{product.metafields.image_text_used.video_iframe}}</div>
+			{% else %}
+				{% if product.metafields.image_text_used.image != blank %}
+						<img src="{{ product.metafields.image_text_used.image }}" alt="{{ product.metafields.image_text_2.title }}">
+					{% endif %}
+			{% endif %}
+				
+				
+			</div>     
+		</div>    
+	{% endif %}  
+	</div>
+</div>
+  {% endif %}
+</section>

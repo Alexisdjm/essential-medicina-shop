@@ -1,0 +1,324 @@
+<style>
+  .dot {
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    border: 0.5px solid {{ section.settings.dots_color }};
+  }
+
+  .dot.active {
+    background-color: {{ section.settings.dots_color }}
+  }
+
+  .direct-content--box {
+    max-width: 450px;
+  }
+
+  .custom-btn, .standard-btn {
+    width: fit-content;
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+   }
+
+  .custom-btn {
+    background-color: #e2c265;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .custom-btn:hover {
+    background-color: #edd58f;
+  }
+
+  .standard-btn {
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid white;
+  }
+
+</style>
+
+<div class="new-banner-section--father">
+  <div style="overflow: hidden; max-width: 100vw;">
+    <div class="new-banner-section--declassified slides">
+      {% for block in section.blocks %}
+        <div class="custom-block--father slide" style="background-image: url('{{ block.settings.custom_img_desktop | img_url: "master" }}')">
+          <div class="custom-block--content-bx">
+            <div class="custom-box--content-aligner">
+              
+                <h4 
+                  style="font-size: {{ section.settings.pre_title_font_size }}px;
+                  color: {{ block.settings.pre_title_color }}">
+                  {{ block.settings.pre_title_custom }}</h4>
+                <h2 style="font-size: {{ section.settings.title_font_size }}px;
+                  color: {{ block.settings.title_color }}">
+                  {{ block.settings.title_custom }}</h2>
+                <div class="direct-content--box" style="font-size: {{ section.settings.content_font_size }}px;
+                  color: {{ block.settings.content_color }}">
+                  {{ block.settings.content_custom }}</div>
+                {% if block.settings.button_text_custom != blank and block.settings.button_url_custom != blank %}
+                  <a 
+                    href="{{ block.settings.button_url_custom }}"
+                    class="{{ block.settings.button_style_custom }}">{{ block.settings.button_text_custom }}</a>
+                {% endif %}       
+              
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+    <button id="prev" class="arrow-slide prev">
+      {% render 'slider-arrow' %}
+    </button>
+    <button id="next" class="arrow-slide next">
+      {% render 'slider-arrow' %}
+    </button>
+  <div class="dots-container"></div>
+</div>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slides .slide');
+    const totalSlides = slides.length;
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next")
+    let slideIndex = 0;
+
+
+    const dotsContainer = document.querySelector('.dots-container');
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.setAttribute('data-slide-index', i);
+        dot.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-slide-index'));
+            showSlide(index);
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    showSlide(slideIndex);
+
+    function showSlide(index) {
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        slides[index].classList.add('active');
+
+        // Desplazar los slides para la transición
+        const offset = -index * 100; // Calcula el desplazamiento en porcentaje
+        document.querySelector('.slides').style.transform = `translateX(${offset}vw)`;
+
+        // Actualizar el dot activo
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+        dots[index].classList.add('active');
+
+        slideIndex = index;
+    }
+
+    function prevSlide() {
+        if (slideIndex === 0) {
+            slideIndex = totalSlides - 1; // Ir al último slide
+        } else {
+            slideIndex--; // Mostrar el slide anterior
+        }
+        showSlide(slideIndex);
+    }
+
+    function nextSlide() {
+        if (slideIndex === totalSlides - 1) {
+            slideIndex = 0; // Volver al primer slide
+        } else {
+            slideIndex++; // Mostrar el siguiente slide
+        }
+        showSlide(slideIndex);
+    }
+
+    prevBtn.addEventListener("click", () => {
+      console.log('prev')
+      prevSlide()
+    })
+
+    nextBtn.addEventListener("click", () => {
+      console.log('next')
+      nextSlide()
+    })
+});
+
+
+</script>
+
+{% schema %}
+  {
+    "name": "New Banner",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_dots",
+        "label": "Show dots?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_arrows",
+        "label": "Show arrows?",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "pre_title_font_size",
+        "min": 14,
+        "max": 36,
+        "step": 2,
+        "default": 20,
+        "unit": "px",
+        "label": "Pre-title Font Size"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "min": 16,
+        "max": 80,
+        "step": 4,
+        "default": 44,
+        "unit": "px",
+        "label": "Title Font Size"
+      },
+      {
+        "type": "range",
+        "id": "content_font_size",
+        "min": 12,
+        "max": 36,
+        "step": 2,
+        "default": 16,
+        "unit": "px",
+        "label": "Content Font Size"
+      },
+      {
+        "type": "range",
+        "id": "button_font_size",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "default": 16,
+        "unit": "px",
+        "label": "Button Font Size"
+      },
+      {
+        "type": "color",
+        "id": "dots_color",
+        "label": "Dots Color",
+        "default": "#000"
+      }
+    ],
+    "blocks": [
+      {
+          "type": "custom-image",
+          "name": {
+                "en": "Custom Image",
+                "de": "Custom Bild",
+                "es": "Imagen Personalizada",
+                "fr": "Custom Image",
+                "pt-PT": "Custom Imagem"
+            },
+            "settings":[
+              {
+                "type": "image_picker",
+                "id": "custom_img_desktop",
+                "label": {
+                    "en": "Image",
+                    "de": "Bild",
+                    "es": "Imagen",
+                    "fr": "Image",
+                    "pt-PT": "Imagem"
+                }
+              },
+              {
+                "type": "image_picker",
+                "id": "custom_img_mobile",
+                "label": {
+                    "en": "Mobile Image (Optional)",
+                    "de": "Mobiles Bild (optional)",
+                    "es": "Imagen móvil (opcional)",
+                    "fr": "Image mobile (en option)",
+                    "pt-PT": "Imagem Móvel (Opcional)"
+                }
+              },
+              {
+                "type": "text",
+                "id": "pre_title_custom",
+                "label": "Pre-title"
+              },
+              {
+                "type": "text",
+                "id": "title_custom",
+                "label": "Title"
+              },
+              {
+                "type": "richtext",
+                "id": "content_custom",
+                "label": "Content"
+              },
+              {
+                "type": "text",
+                "id": "button_text_custom",
+                "label": "Button text"
+              },
+              {
+                "type": "color",
+                "id": "pre_title_color",
+                "label": "Pre-title Color",
+                "default": "#fff"
+              },
+              {
+                "type": "color",
+                "id": "title_color",
+                "label": "title Color",
+                "default": "#fff"
+              },
+              {
+                "type": "color",
+                "id": "content_color",
+                "label": "Content Color",
+                "default": "#fff"
+              },
+              {
+                "type": "url",
+                "id": "button_url_custom",
+                "label": "Button URL"
+              },
+              {
+                "type": "select",
+                "id": "button_style_custom", 
+                "options": [
+                  {
+                    "label": "Standard",
+                    "value": "standard-btn"
+                  },
+                  {
+                    "label": "Custom",
+                    "value": "custom-btn"
+                  }
+                ],
+                "default": "custom-btn",
+                "label": "Button style"
+              }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Custom Banner"
+      }
+    ]
+  }
+{% endschema %}

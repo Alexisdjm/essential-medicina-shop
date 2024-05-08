@@ -1,0 +1,39 @@
+{% if product.metafields.bundle.show != blank %}
+<section class="section section_{{ section.id }}">
+  {% if product.metafields.bundle.title != blank %}
+  <div class="wrapper">
+    <div class="sitewide--title-wrapper text-center">
+      <img src="{{ 'title_icon.png' | asset_img_url : '95x' }}" alt="" class="section_title_icon">
+      {% if product.metafields.bundle.title != blank %}		
+      <h2 class="homepage-sections--title title-section">{{product.metafields.bundle.title}}</h2>
+      {% endif %}
+     
+    </div>
+  </div>
+  {% endif %}
+  <div class="pp---text_bundle">
+    <div class="wrapper">
+      <div class="bundle_container">
+        <div class="bundle__wrap">
+          <div data-revy-bundle-id='df584f2e-60e5-4cb6-8d49-6275dc860d9d'></div>
+        	{{product.metafields.bundle.code}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ {% endif %}
+
+
+{% schema %}
+  {
+    "name": "Bundle Section",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

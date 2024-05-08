@@ -1,0 +1,213 @@
+ <!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {% if settings.favicon != blank %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '180x180', crop: 'center' }}" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ settings.favicon | img_url: '180x180', crop: 'center'  }}">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ settings.favicon | img_url: '180x180', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ settings.favicon | img_url: '32x32', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="194x194" href="{{ settings.favicon | img_url: '194x194', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ settings.favicon | img_url: '192x192', crop: 'center'  }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ settings.favicon | img_url: '16x16', crop: 'center'  }}">
+  {% endif %}
+
+  <!-- Title and description ================================================== -->
+  <title>
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  <!-- Helpers ================================================== -->
+  {% render 'social-meta-tags' %}
+  <link rel="canonical" href="{{ canonical_url }}"/>
+  {% if template contains 'product' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  {% else %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endif %}
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://use.typekit.net/asb1fad.css"> -->
+  <!-- CSS ================================================== -->
+  {% render 'css-variables' %}
+
+  {% if template == 'index' %}
+    <link rel="preload" href="{{ 'theme-index.min.css' | asset_url }}" as="style">
+    {{ 'theme-index.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'collection' %}
+    <link rel="preload" href="{{ 'theme-collection.min.css' | asset_url }}" as="style">
+    {{ 'theme-collection.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'list-collections' %}
+    <link rel="preload" href="{{ 'theme-list-collections.min.css' | asset_url }}" as="style">
+    {{ 'theme-collection-list.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'product' %}
+    <link rel="preload" href="{{ 'theme-product.min.css' | asset_url }}" as="style">
+    {{ 'theme-product.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'blog' %}
+    <link rel="preload" href="{{ 'theme-blog.min.css' | asset_url }}" as="style">
+    {{ 'theme-blog.min.css' | asset_url | stylesheet_tag }}
+  {% elsif template == 'cart' %}
+    <link rel="preload" href="{{ 'theme-cart.min.css' | asset_url }}" as="style">
+    {{ 'theme-cart.min.css' | asset_url | stylesheet_tag }}
+  {% else %}
+    <link rel="preload" href="{{ 'theme.min.css' | asset_url }}" as="style">
+    {{ 'theme.min.css' | asset_url | stylesheet_tag }}
+  {% endif %}
+
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
+  {{ 'newstyles.css' | asset_url | stylesheet_tag }}
+
+  <!-- Header hook for plugins ================================================== -->
+  {{ content_for_header }}
+
+  {% if template contains 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+  {% endif %}
+  {% include 'judgeme_core' %}
+
+  {% render 'kickbooster' %}
+
+  
+
+  
+  {% if template == 'cart' %}{% include "revy-bundle-script" %}{% endif %}
+
+
+  
+
+  
+</head>
+{% comment %}
+  Add the page template as a class for easy page or template specific styling.
+{% endcomment %}
+<body id="{{ page_title | handle }}" class="{% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} 
+{% if settings.use_merriweather %} merriweather-font{% endif %}">
+  <script>
+    var classList = document.documentElement.classList;
+    classList.add('supports-js')
+    classList.add('js');
+    classList.remove('no-js');
+    {% comment %}It's supported well enough, we won't detect it{% endcomment %}
+  </script>
+
+  {% comment %}
+  Cart Drawer, also used by 'Quick View', 'LogIn', and 'Search'
+  {% endcomment %}
+  {% render 'right-drawer' %}
+
+  <div id="DrawerOverlay" class="drawer-overlay"></div>
+
+  <div id="PageContainer" data-cart-action="{{ settings.ajax_cart_method }}">
+    {% section 'announcement-bar' %}
+
+    {% section 'header' %}
+
+    {% unless template == 'collection' or template == 'list-collections' or template contains 'contact' %}
+      {% if settings.enable_breadcrumbs %}
+        {% render 'breadcrumb' %}
+      {% endif %}
+    {% endunless%}
+
+    {% if template == 'index' %}
+      <div class="flow-homepage">
+    {% else %}
+     {% unless template == 'collection' or template contains 'contact' or template == 'list-collections' %}<div class="{% unless template == 'product' %}wrapper{% endunless %} main-content page-main--wrapper">{% endunless %}
+    {% endif %}
+
+    {{ content_for_layout }}
+   </div>
+
+    <div class="footer-wrapper">
+      {% section 'footer--newsletter' %}
+      {% section 'footer' %}
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    window.lazySizesConfig.rias = window.lazySizesConfig.rias || {};
+
+    // configure available widths to replace with the {width} placeholder
+    window.lazySizesConfig.rias.widths = [150, 300, 600, 900, 1200, 1500, 1800, 2100];
+
+    document.addEventListener('lazyriasmodifyoptions', function (e) {
+      // convert width to width specification for shopify
+      var widthmap = {}
+      var aspect = parseFloat(e.target.dataset.aspectratio); // classList.contains('lazyload-square');
+      var forceHeight = parseInt(e.target.dataset.forceHeight, 10);
+      window.lazySizesConfig.rias.widths.forEach(function (width) {
+        if (forceHeight) {
+          var heightForWidth = width / aspect;
+          var newWidth, newHeight;
+          if (heightForWidth < forceHeight) {
+            newWidth = forceHeight / heightForWidth * width;
+          } else {
+            newWidth = width;
+          }
+          newHeight = newWidth / aspect;
+          widthmap[width] = newWidth.toFixed(0) + 'x' + newHeight.toFixed(0)
+        } else {
+          widthmap[width] = width.toString() + 'x';
+        }
+      });
+      e.detail.widthmap = widthmap;
+    });
+  </script>
+
+  <script defer type="module" src="{{ 'theme.min.js' | asset_url }}"></script>
+  <script defer nomodule src="{{ 'theme.legacy.min.js' | asset_url }}"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="{{ 'custom.js' | asset_url }}" defer></script>
+  {% render 'verification-popup' %}
+  {% render 'popup' %}
+
+  <script type="application/json" id="wetheme-global">
+    {
+      {% comment %}Translations that will be used in javascript section handling{% endcomment %}
+      "translations": {
+        "addToCart": {{ 'products.product.add_to_cart' | t | json }},
+        "added": {{ 'products.product.added' | t | json }},
+        "soldOut": {{ 'products.product.sold_out' | t | json }},
+        "unavailable": {{ 'products.product.unavailable' | t | json }},
+        "no_results_html": {{ 'general.search.no_results_html' | t | json }},
+        "results_for_html": {{ 'general.search.results_for_html' | t | json }},
+        "products": {{ 'general.search.products' | t | json }},
+        "pages": {{ 'general.search.pages' | t | json }},
+        "collections": {{ 'general.search.collections' | t | json }},
+        "articles": {{ 'general.search.articles' | t | json }},
+        "quick_shop": {{ 'products.product.quick_shop' | t | json }},
+        "view_options": {{ 'products.product.view_options' | t | json }},
+        "read_more_html": {{ 'products.product.read_more_html' | t | json }},
+        "read_less_html": {{ 'products.product.read_less_html' | t | json }},
+        "youve_viewed": {{ 'collections.paginate.youve_viewed' | t | json }},
+        "load_more": {{ 'collections.paginate.load_more' | t | json }},
+        "productAdded": {{ 'products.product.added' | t | json }},
+        "loading": {{ 'collections.paginate.loading' | t | json }},
+        "giftwrap_label": {{ 'products.general.giftwrap_label' | t | json }},
+        "yes": {{ 'products.general.yes' | t | json }}
+      },
+      "moneyFormat": {{ shop.money_format | json }},
+      "giftwrapProduct": {{ settings.giftwrap_product_selector | json }},
+      "giftwrapEnabled": {{ settings.giftwrap_enable | json }}
+    }
+  </script>
+  {% include 'revy-bundle-script' %}
+</body>
+</html>

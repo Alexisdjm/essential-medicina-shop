@@ -1,0 +1,36 @@
+<!-- /snippets/search-bar.liquid -->
+{% comment %}
+
+  A snippet to include a search bar anywhere in your theme.
+  Note we are using 'input-group' for the layout. Look under Forms > Input Groups for some demos.
+
+  More information:
+   - http://docs.shopify.com/themes/liquid-variables/search
+
+  To return only products in results:
+    - http://docs.shopify.com/manual/configuration/store-customization/return-only-product-in-storefront-search-results
+    - Or manually add type=product to the search URL as a query parameter
+    - Uncomment hidden input with value="product" below
+
+{% endcomment %}
+
+<form action="{{ routes.search_url }}" method="get" class="input-group search-bar" role="search">
+  <div class="search-bar-input-group">
+    {% comment %}<input type="hidden" name="type" value="product">{% endcomment %}
+    <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}">
+    <div tabindex="0" class="search-drawer--clear">
+      <span class="search-drawer--clear-icon"></span>
+    </div>
+  </div>
+  <span class="input-group-btn">
+    <button type="submit" class="btn icon-fallback-text">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.414" height="20.414" viewBox="0 0 20.414 20.414">
+        <g id="iconfinder_search_2561381" transform="translate(-2 -2)">
+          <circle id="Elipse_11" data-name="Elipse 11" cx="7.5" cy="7.5" r="7.5" transform="translate(3 3)" fill="none" stroke="#525252" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <line id="Línea_4" data-name="Línea 4" x1="5.2" y1="5.2" transform="translate(15.8 15.8)" fill="none" stroke="#525252" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </svg>
+      <span class="fallback-text">{{ 'general.search.submit' | t }}</span>
+    </button>
+  </span>
+</form>
