@@ -302,8 +302,12 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
     height: calc(100vh - 186px);
   }
 
-  .new-custom--btn.btn--mobile {
+  .mobile-nav__item a.new-custom--btn.btn--mobile {
     display: block;
+    background-color: #e2c265;
+    width: fit-content;
+    margin: 10px 25px;
+
   }
 
   .new-custom--btn.btn--desktop {
