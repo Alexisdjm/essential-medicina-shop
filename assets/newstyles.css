@@ -243,6 +243,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
   .custom-block--content-bx {
     margin: auto;
   }
+
+  .arrow-slide {
+    top: 71%;
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
