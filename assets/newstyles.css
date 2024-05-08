@@ -310,6 +310,11 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
 
   }
 
+  .mobile-nav__item a.new-custom--btn.btn--mobile:hover {
+    background-color: #edd58f;
+    color: #000;
+  }
+
   .new-custom--btn.btn--desktop {
     display: none;
   }
