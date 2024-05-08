@@ -116,6 +116,7 @@
     function goToSlide(slideIndex) {
       currentSlide = slideIndex;
       const slideOffset = -currentSlide * slideWidth * slidesToShow;
+      console.log(slidesToShow, slideWidth, currentSlide, slideOffset)
       slider.style.transform = `translateX(${slideOffset}vw)`;
   
       updateDots();
