@@ -41,7 +41,7 @@
 </style>
 
 <div class="new-banner-section--father">
-  <div style="overflow: hidden; max-width: 100vw;">
+  <div class="new-banner--inner-container">
     <div class="new-banner-section--declassified slides">
       {% for block in section.blocks %}
         <div class="custom-block--father slide" style="background-image: url('{{ block.settings.custom_img_desktop | img_url: "master" }}')">
@@ -142,6 +142,10 @@
         }
         showSlide(slideIndex);
     }
+
+    setInterval(() => {
+        nextSlide();
+    }, 10000);
 
     prevBtn.addEventListener("click", () => {
       console.log('prev')

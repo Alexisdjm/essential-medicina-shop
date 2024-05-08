@@ -43,6 +43,11 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
   margin-left: 2vw;
 }
 
+.new-banner--inner-container {
+  overflow: hidden; 
+  max-width: 100vw;
+}
+
 .custom-box--content-aligner {
   display: flex;
   flex-direction: column;
