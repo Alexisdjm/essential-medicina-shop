@@ -71,7 +71,8 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
 .dots-container {
   position: absolute;
   bottom: 1.5em;
-  right: 45vw;
+  width: 100%;
+  justify-content: center;
   display: flex;
   gap: 1em
 }
@@ -87,6 +88,7 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
     position: absolute;
     background-color: transparent;
     transition: all 0.2s ease-in-out;
+    z-index: 99;
   }
 
 .new-banner-section--father:hover .arrow-slide.prev,
@@ -312,7 +314,7 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
 
   .mobile-nav__item a.new-custom--btn.btn--mobile:hover {
     background-color: #edd58f;
-    color: #000;
+    color: #000 !important;
   }
 
   .new-custom--btn.btn--desktop {
