@@ -15,6 +15,10 @@
    font-family: "Merriweather", serif;
 }
 
+.new-custom--btn.btn--mobile {
+  display: none;
+}
+
 div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
   background-color: #EDD58F;
 }
@@ -296,6 +300,14 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
 
   .custom-block--father {
     height: calc(100vh - 186px);
+  }
+
+  .new-custom--btn.btn--mobile {
+    display: block;
+  }
+
+  .new-custom--btn.btn--desktop {
+    display: none;
   }
 }
 

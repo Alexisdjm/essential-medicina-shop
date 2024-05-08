@@ -193,6 +193,7 @@ Testing Cypress integration
         {% endif %}
       {% endfor %}
 
+
       {%- if section.settings.show_locale_selector and shop.published_locales.size > 1 -%}
         <li class="mobile-nav__item" aria-haspopup="true">
           <div class="mobile-nav__has-sublist">
@@ -263,6 +264,23 @@ Testing Cypress integration
             </ul>
           {%- endform -%}
         </li>
+      {% endif %}
+      {% if section.settings.shop_all_btn %}
+        <a class="new-custom--btn btn--mobile" href="#">
+          {% assign idioma_actual = shop.locale %}
+          {% case idioma_actual %}
+            {% when 'en' %}
+              Shop Other Products
+            {% when 'fr' %}
+              Acheter d'autres produits
+            {% when 'es' %}
+              Comprar Otros Productos
+            {% when 'pt-PT' %}
+              Compre outros produtos
+            {% else %}
+              Shop andre produkter
+        {% endcase %}
+        </a>
       {% endif %}
     </ul>
 
@@ -374,7 +392,7 @@ Testing Cypress integration
 
       <div class="site-header__wrapper__right top-links">
         {% if section.settings.shop_all_btn %}
-          <a class="new-custom--btn" href="#">
+          <a class="new-custom--btn btn--desktop" href="#">
             {% assign idioma_actual = shop.locale %}
             {% case idioma_actual %}
               {% when 'en' %}
