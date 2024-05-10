@@ -306,10 +306,6 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
       text-align: center;
   }
 
-  .custom-block--father {
-    height: calc(100vh - 186px);
-  }
-
   .mobile-nav__item a.new-custom--btn.btn--mobile {
     display: block;
     background-color: #e2c265;

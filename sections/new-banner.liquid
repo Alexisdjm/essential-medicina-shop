@@ -38,6 +38,7 @@
     border: 1.5px solid white;
   }
 
+
 </style>
 
 <div class="new-banner-section--father">
@@ -87,7 +88,15 @@
     const totalSlides = slides.length;
     const prevBtn = document.getElementById("prev");
     const nextBtn = document.getElementById("next")
+    const announcementHeight = document.getElementById('shopify-section-announcement-bar').offsetHeight
+    const headerHeight = document.getElementById('shopify-section-header').offsetHeight
     let slideIndex = 0;
+
+    console.log(headerHeight, announcementHeight)
+
+    slides.forEach((element) => {
+      element.style.height = `calc(100vw - ${announcementHeight}px - ${headerHeight}.px`
+    })
 
 
     const dotsContainer = document.querySelector('.dots-container');
