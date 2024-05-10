@@ -253,6 +253,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
   .arrow-slide {
     top: 71%;
   }
+
+  .new-custom--btn.btn--mobile {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
