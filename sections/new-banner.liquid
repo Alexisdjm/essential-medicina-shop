@@ -38,6 +38,18 @@
     border: 1.5px solid white;
   }
 
+  @media only screen and (max-width: 463px) {
+
+    .slide-height--1 {
+      height: calc(100vw - 231px);
+    }
+  
+    .slide-height--2 {
+      height: calc(100vw - 186px);
+    }
+  }
+
+
 
 </style>
 
@@ -45,7 +57,8 @@
   <div class="new-banner--inner-container">
     <div class="new-banner-section--declassified slides">
       {% for block in section.blocks %}
-        <div class="custom-block--father slide" style="background-image: url('{{ block.settings.custom_img_desktop | img_url: "master" }}')">
+      <div class="custom-block--father slide {% if section.settings.shop_all_height %}slide-height--1{% else %}.slide-height--2{% endif %}" 
+        style="background-image: url('{{ block.settings.custom_img_desktop | img_url: "master" }}')">
           <div class="custom-block--content-bx">
             <div class="custom-box--content-aligner">
               
@@ -88,16 +101,7 @@
     const totalSlides = slides.length;
     const prevBtn = document.getElementById("prev");
     const nextBtn = document.getElementById("next")
-    const announcementHeight = document.getElementById('shopify-section-announcement-bar').offsetHeight
-    const headerHeight = document.getElementById('shopify-section-header').offsetHeight
     let slideIndex = 0;
-
-    console.log(headerHeight, announcementHeight)
-
-    slides.forEach((element) => {
-      element.style.height = `calc(100vw - ${announcementHeight}px - ${headerHeight}.px`
-    })
-
 
     const dotsContainer = document.querySelector('.dots-container');
     for (let i = 0; i < totalSlides; i++) {
@@ -176,15 +180,10 @@
     "settings": [
       {
         "type": "checkbox",
-        "id": "show_dots",
-        "label": "Show dots?",
+        "id": "shop_all_height",
+        "label": "Is there a shop all button?",
+        "info": "This option will calculate de height of each slide",
         "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_arrows",
-        "label": "Show arrows?",
-        "default": false
       },
       {
         "type": "range",
