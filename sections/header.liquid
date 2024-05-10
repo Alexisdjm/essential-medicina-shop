@@ -265,26 +265,7 @@ Testing Cypress integration
           {%- endform -%}
         </li>
       {% endif %}
-      {% if section.settings.shop_all_btn %}
-        <li class="mobile-nav__item" aria-haspopup="true">
-
-          <a class="new-custom--btn btn--mobile" href="#">
-            {% assign idioma_actual = shop.locale %}
-            {% case idioma_actual %}
-              {% when 'en' %}
-                Shop Other Products
-              {% when 'fr' %}
-                Acheter d'autres produits
-              {% when 'es' %}
-                Comprar Otros Productos
-              {% when 'pt-PT' %}
-                Compre outros produtos
-              {% else %}
-                Shop andre produkter
-          {% endcase %}
-          </a>
-        </li>
-      {% endif %}
+      
     </ul>
 
     {% comment %}
@@ -486,6 +467,23 @@ Testing Cypress integration
       </div>
     </div>
   </nav>
+  {% if section.settings.shop_all_btn %}
+    <a class="new-custom--btn btn--mobile" href="#">
+      {% assign idioma_actual = shop.locale %}
+      {% case idioma_actual %}
+        {% when 'en' %}
+          Shop Other Products
+        {% when 'fr' %}
+          Acheter d'autres produits
+        {% when 'es' %}
+          Comprar Otros Productos
+        {% when 'pt-PT' %}
+          Compre outros produtos
+        {% else %}
+          Shop andre produkter
+    {% endcase %}
+    </a>
+  {% endif %}
 </div>
 
 <style>
