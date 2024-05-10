@@ -1191,28 +1191,28 @@
           "icon_8rwDRi": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/Group.png",
+              "block_image": "shopify:\/\/shop_images\/supplementes.png",
               "block_text": "Suplements"
             }
           },
           "icon_dPWXpy": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/Group_1.png",
+              "block_image": "shopify:\/\/shop_images\/food_and_nutrition.png",
               "block_text": "Food & Nutrition"
             }
           },
           "icon_8DaUbb": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/Layer_3.png",
+              "block_image": "shopify:\/\/shop_images\/personal_care.png",
               "block_text": "Personal Care"
             }
           },
           "icon_brGJec": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/Outline_00000096737887794388991420000015328465065648881541.png",
+              "block_image": "shopify:\/\/shop_images\/equipment.png",
               "block_text": "Equipment"
             }
           },
