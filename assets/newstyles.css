@@ -18,6 +18,7 @@
 .new-custom--btn.btn--mobile {
   display: none;
   text-align: center;
+  font-weight: 600;
 }
 
 div.site-header__wrapper__right.top-links a.new-custom--btn:hover, 
