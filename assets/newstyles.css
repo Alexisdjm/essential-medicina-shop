@@ -17,9 +17,11 @@
 
 .new-custom--btn.btn--mobile {
   display: none;
+  text-align: center;
 }
 
-div.site-header__wrapper__right.top-links a.new-custom--btn:hover {
+div.site-header__wrapper__right.top-links a.new-custom--btn:hover, 
+.new-custom--btn.btn--mobile:hover {
   background-color: #EDD58F;
 }
 
