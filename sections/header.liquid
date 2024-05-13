@@ -468,20 +468,8 @@ Testing Cypress integration
     </div>
   </nav>
   {% if section.settings.shop_all_btn %}
-    <a class="new-custom--btn btn--mobile" href="#">
-      {% assign idioma_actual = shop.locale %}
-      {% case idioma_actual %}
-        {% when 'en' %}
-          Shop Other Products
-        {% when 'fr' %}
-          Acheter d'autres produits
-        {% when 'es' %}
-          Comprar Otros Productos
-        {% when 'pt-PT' %}
-          Compre outros produtos
-        {% else %}
-          Shop andre produkter
-    {% endcase %}
+    <a class="new-custom--btn btn--mobile" href="{{ section.settings.shop_all_url }}">
+      {{ section.settings.shop_all_text }}
     </a>
   {% endif %}
 </div>
@@ -608,6 +596,17 @@ Testing Cypress integration
                 "pt-PT": "Compre outros produtos"
             },
             "default": true
+        },
+        {
+          "type": "text",
+          "id": "shop_all_text",
+          "label": "Button Text",
+          "default": "Shop Other Products"
+        },
+        {
+          "type": "url",
+          "id": "shop_all_url",
+          "label": "Button Url"
         },
         {
             "type": "header",
