@@ -59,7 +59,13 @@
       {% for block in section.blocks %}
       <style>
         #block-box--{{ forloop.index0 }}.custom-block--father.slide {
-          border: 1px solid red;
+          background-image: url('{{ block.settings.custom_img_desktop | img_url: "master" }}')
+        }
+
+        @media only screen and (max-width: 767px) {
+          #block-box--{{ forloop.index0 }}.custom-block--father.slide {
+            background-image: url('{{ block.settings.custom_img_mobile | img_url: "master" }}')
+          }
         }
       </style>
       <div id="block-box--{{ forloop.index0 }}" class="custom-block--father slide {% if section.settings.shop_all_height %}slide-height--1{% else %}.slide-height--2{% endif %}" 
