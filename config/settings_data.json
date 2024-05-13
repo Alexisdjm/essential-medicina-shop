@@ -1130,6 +1130,7 @@
             "type": "custom-image",
             "settings": {
               "custom_img_desktop": "shopify:\/\/shop_images\/Frame_23_1.png",
+              "custom_img_mobile": "shopify:\/\/shop_images\/banner2.png",
               "pre_title_custom": "THE POWER OF PLANTS",
               "title_custom": "NATURAL HEALING",
               "content_custom": "<p>Boost your everyday energy and focus naturally, without the highs and lows of caffeine and sugar<\/p>",
@@ -1145,6 +1146,7 @@
             "type": "custom-image",
             "settings": {
               "custom_img_desktop": "shopify:\/\/shop_images\/Frame_23_2.png",
+              "custom_img_mobile": "shopify:\/\/shop_images\/banner3.png",
               "pre_title_custom": "GLOBAL WELLNESS",
               "title_custom": "DEEP ANCESTRAL ROOTS",
               "content_custom": "<p>Discover blends that harness centuries-old traditions from around the world to rejuvenate and heal<\/p>",
@@ -1160,6 +1162,7 @@
             "type": "custom-image",
             "settings": {
               "custom_img_desktop": "shopify:\/\/shop_images\/Frame_23_3.png",
+              "custom_img_mobile": "shopify:\/\/shop_images\/banner4.png",
               "pre_title_custom": "NATURAL RELIEF",
               "title_custom": "STRESS FREE LIVING",
               "content_custom": "<p>Effortlessly manage stress with our calming herbal formulas, crafted to help you unwind naturally<\/p>",
