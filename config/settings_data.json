@@ -71,6 +71,8 @@
         "settings": {
           "sticky_header": true,
           "shop_all_btn": true,
+          "shop_all_text": "Shop Other Products",
+          "shop_all_url": "shopify:\/\/collections\/all",
           "logo": "shopify:\/\/shop_images\/EM_Logo_revise_2x_7adba946-7c16-4457-8bc6-d9cf7f634d17.png",
           "logo-placement": "center",
           "logo_padding": 0,
