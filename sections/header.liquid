@@ -376,20 +376,8 @@ Testing Cypress integration
 
       <div class="site-header__wrapper__right top-links">
         {% if section.settings.shop_all_btn %}
-          <a class="new-custom--btn btn--desktop" href="#">
-            {% assign idioma_actual = shop.locale %}
-            {% case idioma_actual %}
-              {% when 'en' %}
-                Shop Other Products
-              {% when 'fr' %}
-                Acheter d'autres produits
-              {% when 'es' %}
-                Comprar Otros Productos
-              {% when 'pt-PT' %}
-                Compre outros produtos
-              {% else %}
-                Shop andre produkter
-          {% endcase %}
+          <a class="new-custom--btn btn--desktop" href="{{ section.settings.shop_all_url }}">
+            {{ section.settings.shop_all_text }}
           </a>
         {% endif %}
         {% if section.settings.logo-placement == 'left' %}
