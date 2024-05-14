@@ -295,6 +295,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   #prev.arrow-slide, #next.arrow-slide {
     top: 55%;
   }
+
+  #prev-slide.arrow-slide, #next-slide.arrow-slide {
+    top: 73%;
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
