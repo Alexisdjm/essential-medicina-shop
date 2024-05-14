@@ -342,6 +342,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
       text-align: center;
   } */
 
+  .custom-block--content-bx {
+    padding: 0 1em;
+  }
+
   .mobile-nav__item a.new-custom--btn.btn--mobile {
     display: block;
     background-color: #e2c265;
