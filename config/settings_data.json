@@ -1146,6 +1146,7 @@
             "type": "custom-image",
             "settings": {
               "custom_img_desktop": "shopify:\/\/shop_images\/Frame_23_2.png",
+              "custom_img_mobile": "shopify:\/\/shop_images\/banner3.png",
               "pre_title_custom": "GLOBAL WELLNESS",
               "title_custom": "DEEP ANCESTRAL ROOTS",
               "content_custom": "<p>Discover blends that harness centuries-old traditions from around the world to rejuvenate and heal<\/p>",
