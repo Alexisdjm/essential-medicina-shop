@@ -240,6 +240,9 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   .custom-box--content-aligner p {
     font-size: 20px !important;
   }
+}
+
+@media only screen and (max-width: 463px) {
 
   .custom-box--content-aligner {
     justify-content: start;
