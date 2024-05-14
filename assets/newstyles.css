@@ -296,6 +296,11 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   .new-custom--btn.btn--mobile {
     display: block;
   }
+
+  .arrow-slide svg {
+    width: 20px !important;
+    height: 30px !important;
+  }
 }
 
 @media only screen and (min-width: 464px) and (max-width: 767px) {
