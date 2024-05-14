@@ -238,6 +238,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   .custom-box--content-aligner {
     margin-top: 0;
   }
+
+    .arrow-slide {
+    top: 56%;
+  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 463px) {
@@ -255,6 +259,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
 
   .custom-box--content-aligner {
     margin-top: 3em;
+  }
+
+  .arrow-slide {
+    top: 71%;
   }
 }
 
@@ -283,10 +291,6 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
 
   .custom-block--content-bx {
     margin: auto;
-  }
-
-  .arrow-slide {
-    top: 71%;
   }
 
   .new-custom--btn.btn--mobile {
