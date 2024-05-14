@@ -230,6 +230,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   .mobile-nav-bar-wrapper {
     padding: 0 !important;
   }
+
+  .announcement-bar div:nth-child(2) {
+    margin-top: 10px !important;
+  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 463px) {
