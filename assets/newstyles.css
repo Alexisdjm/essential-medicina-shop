@@ -337,10 +337,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
 
 @media only screen and (max-width: 767px) {
 
-  .custom-box--content-aligner {
+  /* .custom-box--content-aligner {
       align-items: center;
       text-align: center;
-  }
+  } */
 
   .mobile-nav__item a.new-custom--btn.btn--mobile {
     display: block;
