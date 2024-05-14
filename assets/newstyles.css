@@ -240,10 +240,6 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   .custom-box--content-aligner {
     margin-top: 0;
   }
-
-    #prev.arrow-slide, #next.arrow-slide {
-    top: 55%;
-  }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 463px) {
@@ -257,10 +253,6 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
 
   .custom-box--content-aligner p {
     font-size: 16px !important;
-  }
-
-  .arrow-slide {
-    top: 71%;
   }
 }
 
@@ -298,6 +290,10 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   .arrow-slide svg {
     width: 20px !important;
     height: 30px !important;
+  }
+
+  #prev.arrow-slide, #next.arrow-slide {
+    top: 55%;
   }
 }
 
