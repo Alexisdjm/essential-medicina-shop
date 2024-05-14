@@ -225,6 +225,7 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
 
   .custom-box--content-aligner p {
     font-size: 12px !important;
+    max-width: 90%;
   }
 
   .mobile-nav-bar-wrapper {
