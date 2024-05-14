@@ -79,7 +79,7 @@
         }
       </style>
       <div id="block-box--{{ forloop.index0 }}" class="custom-block--father slide 
-        {% if block.settings.custom_img_mobile %}mobile-bg {% endif %}
+        {% if block.settings.custom_img_mobile != blank %}mobile-bg {% endif %}
         {% if section.settings.shop_all_height %}slide-height--1{% else %}slide-height--2{% endif %}" >
           <div class="custom-block--content-bx">
             <div class="custom-box--content-aligner">
