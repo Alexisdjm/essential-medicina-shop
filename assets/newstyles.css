@@ -290,7 +290,7 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
   }
 
   .custom-block--content-bx {
-    margin: auto;
+    margin: 0 auto;
   }
 
   .new-custom--btn.btn--mobile {
