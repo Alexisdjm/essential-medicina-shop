@@ -38,7 +38,17 @@
     border: 1.5px solid white;
   }
 
-  @media only screen and (max-width: 463px) {
+  @media only screen and (max-width: 375px) {
+    .slide-height--1 {
+      height: calc(100vh - 231px);
+    }
+  
+    .slide-height--2 {
+      height: calc(100vh - 186px);
+    }
+  }
+
+  @media only screen and (min-width: 376px) and (max-width: 463px) {
 
     .slide-height--1 {
       height: calc(100vh - 231px);
