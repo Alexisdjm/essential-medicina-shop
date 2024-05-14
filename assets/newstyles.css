@@ -239,8 +239,8 @@ div.site-header__wrapper__right.top-links a.new-custom--btn:hover,
     margin-top: 0;
   }
 
-    .arrow-slide {
-    top: 56%;
+    #prev.arrow-slide, #next.arrow-slide {
+    top: 90%;
   }
 }
 
