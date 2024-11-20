@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "sale_badge_color": "#f83435",
@@ -29,21 +38,23 @@
     "product-grid": "square",
     "quick_shop_enable": true,
     "quick_add_enable": true,
-    "sm_facebook_link": "https:\/\/www.facebook.com\/essentialmedicina\/",
-    "sm_twitter_link": "https:\/\/twitter.com\/EssentialMedic",
-    "sm_instagram_link": "https:\/\/www.instagram.com\/essentialmedicina\/",
-    "sm_youtube_link": "https:\/\/www.youtube.com\/channel\/UCLmY26BikgeqIHb4PxIU0Bw",
+    "sm_facebook_link": "https://www.facebook.com/essentialmedicina/",
+    "sm_twitter_link": "https://twitter.com/EssentialMedic",
+    "sm_instagram_link": "https://www.instagram.com/essentialmedicina/",
+    "sm_youtube_link": "https://www.youtube.com/channel/UCLmY26BikgeqIHb4PxIU0Bw",
     "popup--enable": true,
-    "popup-newsletter-top": "shopify:\/\/shop_images\/May2018-318_preview.jpg",
+    "popup-newsletter-top": "shopify://shop_images/May2018-318_preview.jpg",
     "pop-up-text-header-text": "Join our newsletter",
-    "pop-up-text-description-text": "<p>Sign up to receive the latest updates & discounts<\/p>",
+    "pop-up-text-description-text": "<p>Sign up to receive the latest updates & discounts</p>",
+    "popup--show-social-icons": true,
+    "popup--show-newsletter": false,
     "desktop-popup-style": "fullscreen",
     "pop-up-delay": 15,
     "popup--test-mode": false,
-    "favicon": "shopify:\/\/shop_images\/favicon_102626bc-269d-46ef-b774-55d8ed38ace5.png",
+    "favicon": "shopify://shop_images/favicon_102626bc-269d-46ef-b774-55d8ed38ace5.png",
     "animations_enabled": false,
     "page_fade_enabled": false,
-    "checkout_logo_image": "shopify:\/\/shop_images\/56478692_1209312105899540_1597709103759622144_n.png",
+    "checkout_logo_image": "shopify://shop_images/56478692_1209312105899540_1597709103759622144_n.png",
     "checkout_logo_position": "center",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
@@ -59,7 +70,7 @@
         "type": "announcement-bar",
         "settings": {
           "enable_announcement_bar": true,
-          "message_text": "<p>Free shipping on orders over $90<\/p>",
+          "message_text": "<p>Free shipping on orders over $90</p>",
           "message_link": "",
           "announcement-bar--background-color": "#263e6d",
           "announcement-bar--text-color": "#ffffff",
@@ -72,8 +83,8 @@
           "sticky_header": true,
           "shop_all_btn": true,
           "shop_all_text": "SHOP SUPPLEMENTS",
-          "shop_all_url": "https:\/\/essentialmedicina.gethealthy.store\/",
-          "logo": "shopify:\/\/shop_images\/EM_Logo_revise_2x_7adba946-7c16-4457-8bc6-d9cf7f634d17.png",
+          "shop_all_url": "https://essentialmedicina.gethealthy.store/",
+          "logo": "shopify://shop_images/EM_Logo_revise_2x_7adba946-7c16-4457-8bc6-d9cf7f634d17.png",
           "logo-placement": "center",
           "logo_padding": 0,
           "logo_max_width": 180,
@@ -99,9 +110,9 @@
             "type": "image",
             "settings": {
               "title": "Share your story",
-              "text": "<p>Here's your chance to make a great first impression<\/p>",
+              "text": "<p>Here's your chance to make a great first impression</p>",
               "button_label": "Shop now",
-              "button_link": "shopify:\/\/collections\/all",
+              "button_link": "shopify://collections/all",
               "caption-background": "rgba(0,0,0,0)",
               "caption-text": "#ffffff",
               "button-text": "#ffffff",
@@ -187,7 +198,7 @@
       "video--video-hero": {
         "type": "video--video-hero",
         "settings": {
-          "url": "https:\/\/vimeo.com\/601381881",
+          "url": "https://vimeo.com/601381881",
           "desktopHeight": "550",
           "mobileHeight": "350",
           "title": "",
@@ -228,7 +239,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client1_231b839c-f40c-4006-be45-f9481ddddd94.jpg",
+              "image": "shopify://shop_images/client1_231b839c-f40c-4006-be45-f9481ddddd94.jpg",
               "description": "",
               "link": ""
             }
@@ -237,7 +248,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client2_d0feaf52-3e22-4795-842a-bedd507cef6b.jpg",
+              "image": "shopify://shop_images/client2_d0feaf52-3e22-4795-842a-bedd507cef6b.jpg",
               "description": "",
               "link": ""
             }
@@ -246,7 +257,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client3_586491bf-8d9d-4df5-9524-a8007ebd2696.jpg",
+              "image": "shopify://shop_images/client3_586491bf-8d9d-4df5-9524-a8007ebd2696.jpg",
               "description": "",
               "link": ""
             }
@@ -255,7 +266,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client4_eb5f5ea1-fa4b-4dc7-915a-ff19d2dc442e.jpg",
+              "image": "shopify://shop_images/client4_eb5f5ea1-fa4b-4dc7-915a-ff19d2dc442e.jpg",
               "description": "",
               "link": ""
             }
@@ -264,7 +275,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client5.jpg",
+              "image": "shopify://shop_images/client5.jpg",
               "description": "",
               "link": ""
             }
@@ -273,7 +284,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client6.jpg",
+              "image": "shopify://shop_images/client6.jpg",
               "description": "",
               "link": ""
             }
@@ -282,7 +293,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client7.jpg",
+              "image": "shopify://shop_images/client7.jpg",
               "description": "",
               "link": ""
             }
@@ -291,7 +302,7 @@
             "type": "logo_image",
             "settings": {
               "image_svg": "",
-              "image": "shopify:\/\/shop_images\/client8.jpg",
+              "image": "shopify://shop_images/client8.jpg",
               "description": "",
               "link": ""
             }
@@ -325,7 +336,7 @@
           "testimonials-0": {
             "type": "text",
             "settings": {
-              "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+              "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
               "customer_name": "John Doe",
               "stars": 5
             }
@@ -333,7 +344,7 @@
           "testimonials-1": {
             "type": "text",
             "settings": {
-              "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+              "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
               "customer_name": "John Doe",
               "stars": 5
             }
@@ -341,7 +352,7 @@
           "testimonials-2": {
             "type": "text",
             "settings": {
-              "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+              "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
               "customer_name": "John Doe",
               "stars": 5
             }
@@ -362,18 +373,18 @@
         "type": "image--image-with-text",
         "settings": {
           "colors": "white",
-          "image": "shopify:\/\/shop_images\/May2018-300_preview.jpg",
+          "image": "shopify://shop_images/May2018-300_preview.jpg",
           "text_overlapping_image": true,
           "section-width": "full",
           "layout": "right",
           "text_alignment": "left",
           "title": "OUR CONTRIBUTION",
           "color_title": "#71351f",
-          "text": "<p>A portion of proceeds from Essential Medicina goes to support those who inspire us the most. Our focus is on education, and the organizations we support are dedicated to educating youth and preserving wisdom traditions each in their own unique setting and manner. Every year we sponsor a growing number of students' education for the entire year and whenever possible, we journey to cultivate our own relationship with these special young visionaries.<\/p>",
+          "text": "<p>A portion of proceeds from Essential Medicina goes to support those who inspire us the most. Our focus is on education, and the organizations we support are dedicated to educating youth and preserving wisdom traditions each in their own unique setting and manner. Every year we sponsor a growing number of students' education for the entire year and whenever possible, we journey to cultivate our own relationship with these special young visionaries.</p>",
           "sign": "",
           "author": "",
           "button_label": "Learn more",
-          "button_link": "shopify:\/\/pages\/our-partner"
+          "button_link": "shopify://pages/our-partner"
         }
       },
       "products--featured-product": {
@@ -390,7 +401,7 @@
           "show_smart_checkout": true,
           "show_pickup_locations": false,
           "show_discount": "percentage",
-          "trust-badge": "shopify:\/\/shop_images\/image.png",
+          "trust-badge": "shopify://shop_images/image.png",
           "trust-badge_max_width": 180,
           "image-placement": "left",
           "enable_video_loop": false,
@@ -513,9 +524,9 @@
           "footer-0": {
             "type": "text",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/Essential.png",
+              "logo": "shopify://shop_images/Essential.png",
               "title": "",
-              "richtext": "<p>Our formulations and products draw from the great and ancient medicine traditions of the East, Chinese medicine and Ayurvedic medicine, Tibetan medicine, as well as from the wisdom traditions of the three Americas, Europe, Africa, Australia and even the oceans, lakes, rivers and waterways between them.<\/p>",
+              "richtext": "<p>Our formulations and products draw from the great and ancient medicine traditions of the East, Chinese medicine and Ayurvedic medicine, Tibetan medicine, as well as from the wisdom traditions of the three Americas, Europe, Africa, Australia and even the oceans, lakes, rivers and waterways between them.</p>",
               "manual_width": 24
             }
           },
@@ -593,7 +604,7 @@
           "form-3"
         ],
         "settings": {
-          "banner_image": "shopify:\/\/shop_images\/EM_May17-49.jpg",
+          "banner_image": "shopify://shop_images/EM_May17-49.jpg",
           "banner-image-size": "30vh",
           "parallax": false,
           "layout": "left",
@@ -617,7 +628,7 @@
           "show_smart_checkout": false,
           "show_pickup_locations": false,
           "show_description": true,
-          "trust-badge": "shopify:\/\/shop_images\/image.png",
+          "trust-badge": "shopify://shop_images/image.png",
           "trust-badge_max_width": 180,
           "description_position": "inline_bottom",
           "enable_readmore": false,
@@ -660,7 +671,7 @@
       "template--collections-list": {
         "type": "template--collections-list",
         "settings": {
-          "banner_image": "shopify:\/\/shop_images\/EM_May17-92.jpg",
+          "banner_image": "shopify://shop_images/EM_May17-92.jpg",
           "banner-image-size": "40vh",
           "parallax": false,
           "show_title": false,
@@ -683,13 +694,13 @@
           "1624633206f7208890-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/woman-meditating-yoga-alone-at-sunrise-mountains-v-NL8QZ74.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/EM-113_1.jpg",
+              "image": "shopify://shop_images/woman-meditating-yoga-alone-at-sunrise-mountains-v-NL8QZ74.jpg",
+              "mobile_image": "shopify://shop_images/EM-113_1.jpg",
               "pretitle": "SUSTAINABLE",
               "title": "ENERGY",
-              "text": "<p>FOR A BUSY LIFESTYLE<\/p>",
+              "text": "<p>FOR A BUSY LIFESTYLE</p>",
               "button_label": "Shop Now",
-              "button_link": "shopify:\/\/collections",
+              "button_link": "shopify://collections",
               "caption-background": "rgba(0,0,0,0)",
               "caption-text": "#ffffff",
               "caption-title": "#ffdb73",
@@ -702,8 +713,8 @@
           "ac2b73c3-20cf-4ea8-a2a6-086f2c5df3c1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/slide-4_58fb0cc5-0d0c-43ff-a81f-1ffdeb53c3fc.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/slide-4_58fb0cc5-0d0c-43ff-a81f-1ffdeb53c3fc.jpg",
+              "image": "shopify://shop_images/slide-4_58fb0cc5-0d0c-43ff-a81f-1ffdeb53c3fc.jpg",
+              "mobile_image": "shopify://shop_images/slide-4_58fb0cc5-0d0c-43ff-a81f-1ffdeb53c3fc.jpg",
               "pretitle": "SUSTAINABLE",
               "title": "ENERGY",
               "text": "",
@@ -743,7 +754,7 @@
           "16246345707b6a6ea9-0": {
             "type": "text",
             "settings": {
-              "testimonial_text": "<p>My favorite way to use Essential Medicina is at the start of my day. I’m not a coffee drinker, but I do enjoy waking up to a warm, nourishing elixir. I stir a heaping teaspoon of Medicina in a cup of hot water with either a few drops of stevia or a 1\/2 teaspoon of honey. Then I top it off with steamed hemp milk and a sprinkle of cinnamon. It’s not too strong nor too light. I find it’s the perfect companion to my morning, whether I’m reading on the porch or waking up with yoga. Yummmmmm. <\/p>",
+              "testimonial_text": "<p>My favorite way to use Essential Medicina is at the start of my day. I’m not a coffee drinker, but I do enjoy waking up to a warm, nourishing elixir. I stir a heaping teaspoon of Medicina in a cup of hot water with either a few drops of stevia or a 1/2 teaspoon of honey. Then I top it off with steamed hemp milk and a sprinkle of cinnamon. It’s not too strong nor too light. I find it’s the perfect companion to my morning, whether I’m reading on the porch or waking up with yoga. Yummmmmm. </p>",
               "customer_name": "~JASON MRAZ, MUSICIAN AND FARMER Jasonmraz.Com",
               "link": "",
               "stars": 5
@@ -752,7 +763,7 @@
           "7b0d2753-e710-4fae-8141-22d799a625e6": {
             "type": "text",
             "settings": {
-              "testimonial_text": "<p>I feel like my entire body starts doing the can-can when I use the <em>Essential Medicina<\/em> Adrenal Essence formula in my smoothies! It is simultaneously nourishing, restoring and energizing – incredible! I’m highly sensitive to caffeine so finding something that gives me energy and stamina without making me jittery is such a gift. You must try this stuff, it’s magic.<\/p>",
+              "testimonial_text": "<p>I feel like my entire body starts doing the can-can when I use the <em>Essential Medicina</em> Adrenal Essence formula in my smoothies! It is simultaneously nourishing, restoring and energizing – incredible! I’m highly sensitive to caffeine so finding something that gives me energy and stamina without making me jittery is such a gift. You must try this stuff, it’s magic.</p>",
               "customer_name": "~EVA ACKERMAN LandoftheLovely.Com",
               "link": "",
               "stars": 5
@@ -761,7 +772,7 @@
           "20c250a6-602d-4419-8acc-8c1560126b47": {
             "type": "text",
             "settings": {
-              "testimonial_text": "<p>Using the Essential Medicina adrenal program steadily over the course of six months has brought back vitality, enthusiasm and inspiration into every cell in my body. Before I began I felt sluggish, constantly exhausted and mentally foggy – no matter how clean my diet was or how much exercise I got. After using the herbs, I have more energy than I know what to do with – and am pouring it into creative projects, my own business and living a life I love and now have the energy to pursue.<\/p>",
+              "testimonial_text": "<p>Using the Essential Medicina adrenal program steadily over the course of six months has brought back vitality, enthusiasm and inspiration into every cell in my body. Before I began I felt sluggish, constantly exhausted and mentally foggy – no matter how clean my diet was or how much exercise I got. After using the herbs, I have more energy than I know what to do with – and am pouring it into creative projects, my own business and living a life I love and now have the energy to pursue.</p>",
               "customer_name": "~JON MARRO, SOLAR ARTIST JonMarro.Com",
               "link": "",
               "stars": 5
@@ -775,7 +786,7 @@
         ],
         "settings": {
           "colors": "white",
-          "background_image": "shopify:\/\/shop_images\/bg4.jpg",
+          "background_image": "shopify://shop_images/bg4.jpg",
           "circle_images": true,
           "title": "OUR HAPPY FANS",
           "color_title": "#ffffff",
@@ -790,18 +801,18 @@
         "type": "image--image-with-text",
         "settings": {
           "colors": "white",
-          "image": "shopify:\/\/shop_images\/EM-252.jpg",
+          "image": "shopify://shop_images/EM-252.jpg",
           "text_overlapping_image": false,
           "section-width": "content",
           "layout": "left",
           "text_alignment": "left",
           "title": "THE CUP THAT WAKES YOU UP",
           "color_title": "#71351f",
-          "text": "<p>Our current formulations are the culmination of 20+ years of clinical practice, herbal medicine making, mentorship in Functional medicine, and Doctoral level research in East-West integrative medicine. <\/p><p>They are the answer to the problems facing so many in the world today:  <\/p><p>How can I support my body to adapt to the high level of stress that is “normal” in the modern world? How can I have enough energy and focus to be amazing all day long without relying on caffeine and sugar?  How can I restore my body after a period of intense stress and burnout? And best of all: Can it be as easy and taste as good as my morning latte?<\/p><p>The answer to all your questions is right in your cup...Essential Medicina Tonic Lattes.<\/p>",
+          "text": "<p>Our current formulations are the culmination of 20+ years of clinical practice, herbal medicine making, mentorship in Functional medicine, and Doctoral level research in East-West integrative medicine. </p><p>They are the answer to the problems facing so many in the world today:  </p><p>How can I support my body to adapt to the high level of stress that is “normal” in the modern world? How can I have enough energy and focus to be amazing all day long without relying on caffeine and sugar?  How can I restore my body after a period of intense stress and burnout? And best of all: Can it be as easy and taste as good as my morning latte?</p><p>The answer to all your questions is right in your cup...Essential Medicina Tonic Lattes.</p>",
           "sign": "Dr. Eric Baumgartner",
           "author": "Founder and CEO",
           "button_label": "TRY ESSENTIAL MEDICINA",
-          "button_link": "shopify:\/\/collections"
+          "button_link": "shopify://collections"
         }
       },
       "162463477255f12dde": {
@@ -812,7 +823,7 @@
             "settings": {
               "heading": "Free Delivery Worldwids",
               "subheading": "Click here to see more info",
-              "link": "shopify:\/\/pages\/shipping"
+              "link": "shopify://pages/shipping"
             }
           },
           "1624634772d9cdc9da-1": {
@@ -840,33 +851,33 @@
           "1624893760cb0ce7c0-1": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4385.svg?v=1624897877",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4385.svg?v=1624897877",
               "description": "DIGESTIVE SUPPORT",
-              "link": "shopify:\/\/collections\/digestive-support"
+              "link": "shopify://collections/digestive-support"
             }
           },
           "1624893760cb0ce7c0-0": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4386.svg?v=1624897877",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4386.svg?v=1624897877",
               "description": "BRAIN SUPPORT",
-              "link": "shopify:\/\/collections\/brain-support"
+              "link": "shopify://collections/brain-support"
             }
           },
           "1624893760cb0ce7c0-2": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4387.svg?v=1624897877",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4387.svg?v=1624897877",
               "description": "ADRENAL SUPPORT",
-              "link": "shopify:\/\/collections\/adrenal-support"
+              "link": "shopify://collections/adrenal-support"
             }
           },
           "1624893760cb0ce7c0-3": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4388.svg?v=1624897877",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4388.svg?v=1624897877",
               "description": "TONIC LATTES",
-              "link": "shopify:\/\/collections\/herbal-tonic-lattes"
+              "link": "shopify://collections/herbal-tonic-lattes"
             }
           }
         },
@@ -877,14 +888,14 @@
           "1624893760cb0ce7c0-3"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/BACKGROUN_ESSENTIAL.png",
+          "background_image": "shopify://shop_images/BACKGROUN_ESSENTIAL.png",
           "width": 150,
           "show_icon": true,
           "title": "CATEGORIES",
           "color_title": "#72361e",
           "max-width": 1200,
           "min-height": 350,
-          "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Trazado_1704.png?v=1624898378",
+          "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Trazado_1704.png?v=1624898378",
           "horizontal": "left",
           "vertical": "bottom"
         }
@@ -895,7 +906,7 @@
           "1624896419ea064ac5-0": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4257.svg?v=1624896522",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4257.svg?v=1624896522",
               "description": "Paleo and Keto and Vegan friendly",
               "link": ""
             }
@@ -903,7 +914,7 @@
           "1624896419ea064ac5-1": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4255.svg?v=1624896560",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4255.svg?v=1624896560",
               "description": "Doctor formulated",
               "link": ""
             }
@@ -911,7 +922,7 @@
           "1624896419ea064ac5-2": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4254.svg?v=1624896560",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4254.svg?v=1624896560",
               "description": "Energy without caffeine",
               "link": ""
             }
@@ -919,7 +930,7 @@
           "1624896419ea064ac5-3": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4253.svg?v=1624896560",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4253.svg?v=1624896560",
               "description": "Organic and wildcrafted herbs",
               "link": ""
             }
@@ -927,7 +938,7 @@
           "29a098cd-fa8a-4df9-a0f0-f3459f4bfbbe": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4256.svg?v=1624896697",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4256.svg?v=1624896697",
               "description": "No sweeteners",
               "link": ""
             }
@@ -941,14 +952,14 @@
           "29a098cd-fa8a-4df9-a0f0-f3459f4bfbbe"
         ],
         "settings": {
-          "background_image": "shopify:\/\/shop_images\/bg3.jpg",
+          "background_image": "shopify://shop_images/bg3.jpg",
           "width": 150,
           "show_icon": true,
           "title": "BENEFITS",
           "color_title": "#263e6d",
           "max-width": 1500,
           "min-height": 350,
-          "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Trazado_1701.png?v=1624899070",
+          "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Trazado_1701.png?v=1624899070",
           "horizontal": "right",
           "vertical": "top"
         }
@@ -956,12 +967,12 @@
       "1624899359920db649": {
         "type": "image--image-with-text-overlay",
         "settings": {
-          "image": "shopify:\/\/shop_images\/ingredients.jpg",
+          "image": "shopify://shop_images/ingredients.jpg",
           "image_height": "50vw",
           "bg_image_overlay_opacity": 30,
           "parallax": false,
           "title": "Our Roots",
-          "text": "<p>The roots of Essential Medicina run deeper than deep, so deep in fact that there are few places on Earth to which we cannot offer our profound gratitude for their generous contribution and collaboration. Our formulations and products draw from the great and ancient medicine traditions of the East, Chinese medicine and Ayurvedic medicine, Tibetan medicine, as well as from the wisdom traditions of the three Americas, Europe, Africa, Australia and even the oceans, lakes, rivers and waterways between them.<\/p>",
+          "text": "<p>The roots of Essential Medicina run deeper than deep, so deep in fact that there are few places on Earth to which we cannot offer our profound gratitude for their generous contribution and collaboration. Our formulations and products draw from the great and ancient medicine traditions of the East, Chinese medicine and Ayurvedic medicine, Tibetan medicine, as well as from the wisdom traditions of the three Americas, Europe, Africa, Australia and even the oceans, lakes, rivers and waterways between them.</p>",
           "max-width": 500,
           "colors": "light",
           "textPosition": "right",
@@ -969,13 +980,12 @@
           "heading--text-size": 26,
           "text--text-size": 14,
           "button_label": "Learn more",
-          "button_link": "shopify:\/\/pages\/our-roots"
+          "button_link": "shopify://pages/our-roots"
         }
       },
       "1625147103fd6cb203": {
         "type": "instafeed",
-        "settings": {
-        }
+        "settings": {}
       },
       "1625147564ce3a70ac": {
         "type": "title",
@@ -1010,7 +1020,7 @@
           "f034cbaa-3c93-4acd-a937-81bdb999e599": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4253.svg?v=1624896560",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4253.svg?v=1624896560",
               "description": "Organic and wildcrafted herbs",
               "link": ""
             }
@@ -1018,7 +1028,7 @@
           "272ba7cd-3d48-47f4-934d-833de61c2701": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4254.svg?v=1624896560",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4254.svg?v=1624896560",
               "description": "Energy without caffeine",
               "link": ""
             }
@@ -1026,7 +1036,7 @@
           "e784cee5-2df9-4cd6-b778-4a787c0fe8a2": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4255.svg?v=1624896560",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4255.svg?v=1624896560",
               "description": "Doctor formulated",
               "link": ""
             }
@@ -1034,7 +1044,7 @@
           "7d216b86-b7a1-4dfe-8e19-4b182ac89395": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4256.svg?v=1624896697",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4256.svg?v=1624896697",
               "description": "No sweeteners",
               "link": ""
             }
@@ -1042,7 +1052,7 @@
           "9ce47d5f-7c28-42cd-ab72-c530936443e7": {
             "type": "logo_image",
             "settings": {
-              "image_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/1768\/3727\/files\/Grupo_4257.svg?v=1624896522",
+              "image_svg": "https://cdn.shopify.com/s/files/1/1768/3727/files/Grupo_4257.svg?v=1624896522",
               "description": "Paleo and Keto and Vegan friendly",
               "link": ""
             }
@@ -1057,7 +1067,7 @@
         ],
         "settings": {
           "show_section": true,
-          "background_image": "shopify:\/\/shop_images\/BACKGROUN_ESSENTIAL.png",
+          "background_image": "shopify://shop_images/BACKGROUN_ESSENTIAL.png",
           "width": 200,
           "show_icon": true,
           "title": "BENEFITS",
@@ -1068,14 +1078,13 @@
       },
       "pp-image--text": {
         "type": "pp-image--text",
-        "settings": {
-        }
+        "settings": {}
       },
       "template--blog": {
         "type": "template--blog",
         "settings": {
           "show_author_name": true,
-          "blog-sidebar-image": "shopify:\/\/shop_images\/DSC2233.jpg",
+          "blog-sidebar-image": "shopify://shop_images/DSC2233.jpg",
           "blog-sidebar-link": "",
           "show_blog_tags": false,
           "show_recent_posts": true,
@@ -1090,8 +1099,7 @@
       },
       "pp-image--text-icons": {
         "type": "pp-image--text-icons",
-        "settings": {
-        }
+        "settings": {}
       },
       "pp-reviews--judgeme": {
         "type": "pp-reviews--judgeme",
@@ -1104,8 +1112,7 @@
       },
       "pp-bundle": {
         "type": "pp-bundle",
-        "settings": {
-        }
+        "settings": {}
       },
       "new_banner_8GRbJT": {
         "type": "new-banner",
@@ -1113,16 +1120,16 @@
           "custom_image_4MWygf": {
             "type": "custom-image",
             "settings": {
-              "custom_img_desktop": "shopify:\/\/shop_images\/Frame_23.png",
-              "custom_img_mobile": "shopify:\/\/shop_images\/Frame_23_c8c7d7cb-5361-4d0f-b4d5-2cd42d9c00e4.png",
+              "custom_img_desktop": "shopify://shop_images/Frame_23.png",
+              "custom_img_mobile": "shopify://shop_images/Frame_23_c8c7d7cb-5361-4d0f-b4d5-2cd42d9c00e4.png",
               "pre_title_custom": "TRANSFORM YOUR HEALTH",
               "title_custom": "HOLISTIC SUPPORT FOR TRUE WELLBEING",
-              "content_custom": "<p>Explore our curated collection of wellness products in our virtual apothecary<\/p>",
+              "content_custom": "<p>Explore our curated collection of wellness products in our virtual apothecary</p>",
               "button_text_custom": "Shop All",
               "pre_title_color": "#ffffff",
               "title_color": "#ffffff",
               "content_color": "#ffffff",
-              "button_url_custom": "shopify:\/\/collections\/all",
+              "button_url_custom": "shopify://collections/all",
               "button_style_custom": "custom-btn"
             }
           }
@@ -1145,42 +1152,42 @@
           "icon_8rwDRi": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/supplementes.png",
+              "block_image": "shopify://shop_images/supplementes.png",
               "block_text": "Suplements"
             }
           },
           "icon_dPWXpy": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/food_and_nutrition.png",
+              "block_image": "shopify://shop_images/food_and_nutrition.png",
               "block_text": "Food & Nutrition"
             }
           },
           "icon_8DaUbb": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/personal_care.png",
+              "block_image": "shopify://shop_images/personal_care.png",
               "block_text": "Personal Care"
             }
           },
           "icon_brGJec": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/equipment.png",
+              "block_image": "shopify://shop_images/equipment.png",
               "block_text": "Equipment"
             }
           },
           "icon_LTBVrp": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/homecare.png",
+              "block_image": "shopify://shop_images/homecare.png",
               "block_text": "Homecare"
             }
           },
           "icon_8BbU44": {
             "type": "icon",
             "settings": {
-              "block_image": "shopify:\/\/shop_images\/testing.png",
+              "block_image": "shopify://shop_images/testing.png",
               "block_text": "Testing"
             }
           }
@@ -1194,8 +1201,8 @@
           "icon_8BbU44"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Screenshot_2024-04-04_at_11.04_1-removebg-preview.png",
-          "img_bg": "shopify:\/\/shop_images\/Frame_12.png",
+          "logo": "shopify://shop_images/Screenshot_2024-04-04_at_11.04_1-removebg-preview.png",
+          "img_bg": "shopify://shop_images/Frame_12.png",
           "title_text": "Your Gateway to Holistic Wellness!",
           "sub_title_text": "Venture into other kind of product you may like",
           "title_size": 28,
@@ -1204,7 +1211,7 @@
           "block_tfont_size": 24,
           "font_color": "#263e6d",
           "button_text": "SHOP ALL",
-          "button_url": "shopify:\/\/collections\/all"
+          "button_url": "shopify://collections/all"
         }
       }
     },
@@ -1229,13 +1236,12 @@
     ],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12120936241911852800": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
           "position": "right"
@@ -1297,7 +1303,7 @@
               "type": "image",
               "settings": {
                 "button_label": "Shop now",
-                "button_link": "shopify:\/\/collections\/all",
+                "button_link": "shopify://collections/all",
                 "captionHorizontal": "right",
                 "captionAlignment": "right"
               }
@@ -1361,7 +1367,7 @@
             "desktopHeight": "550",
             "mobileHeight": "350",
             "textAlignment": "center-left",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify://collections/all",
             "button_label": "Learn more"
           }
         },
@@ -1379,7 +1385,7 @@
             "bg_image_overlay_opacity": 0,
             "parallax": true,
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "image--logo-list": {
@@ -1387,23 +1393,19 @@
           "blocks": {
             "image--logo-list-0": {
               "type": "logo_image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image--logo-list-1": {
               "type": "logo_image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image--logo-list-2": {
               "type": "logo_image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image--logo-list-3": {
               "type": "logo_image",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1412,8 +1414,7 @@
             "image--logo-list-2",
             "image--logo-list-3"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "text--testimonials": {
           "type": "text--testimonials",
@@ -1422,7 +1423,7 @@
               "type": "text",
               "settings": {
                 "image": "",
-                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
                 "customer_name": "John Doe",
                 "link": "",
                 "stars": 5
@@ -1432,7 +1433,7 @@
               "type": "text",
               "settings": {
                 "image": "",
-                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
                 "customer_name": "John Doe",
                 "link": "",
                 "stars": 5
@@ -1442,7 +1443,7 @@
               "type": "text",
               "settings": {
                 "image": "",
-                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
                 "customer_name": "John Doe",
                 "link": "",
                 "stars": 5
@@ -1454,8 +1455,7 @@
             "testimonials-1",
             "testimonials-2"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "image--image-with-text-1": {
           "type": "image--image-with-text",
@@ -1464,7 +1464,7 @@
             "text_overlapping_image": true,
             "text_alignment": "left",
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "products--featured-product": {
@@ -1560,21 +1560,18 @@
         },
         "blog--blog-posts": {
           "type": "blog--blog-posts",
-          "settings": {
-          }
+          "settings": {}
         },
         "text--text-adverts": {
           "type": "text--text-adverts",
           "blocks": {
             "advert-0": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "advert-1": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1597,18 +1594,15 @@
           "blocks": {
             "footer-0": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-1": {
               "type": "menu",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-2": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1653,8 +1647,7 @@
             "form-2",
             "form-3"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "template--product": {
           "type": "template--product",
@@ -1691,13 +1684,11 @@
             },
             "template--page-block-2": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "template--page-block-3": {
               "type": "richtext",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1807,18 +1798,15 @@
           "blocks": {
             "footer-0": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-1": {
               "type": "menu",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-2": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1915,7 +1903,7 @@
               "type": "image",
               "settings": {
                 "button_label": "Shop now",
-                "button_link": "shopify:\/\/collections\/all",
+                "button_link": "shopify://collections/all",
                 "captionHorizontal": "right",
                 "captionAlignment": "right"
               }
@@ -1924,7 +1912,7 @@
               "type": "image",
               "settings": {
                 "button_label": "Shop now",
-                "button_link": "shopify:\/\/collections\/all",
+                "button_link": "shopify://collections/all",
                 "captionHorizontal": "right",
                 "captionAlignment": "right"
               }
@@ -1950,7 +1938,7 @@
           "type": "video--video-hero",
           "settings": {
             "desktopHeight": "550",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify://collections/all",
             "button_label": "Shop now"
           }
         },
@@ -1960,7 +1948,7 @@
             "text--testimonials-0": {
               "type": "text",
               "settings": {
-                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
                 "customer_name": "John Doe",
                 "link": "",
                 "stars": 5
@@ -1970,7 +1958,7 @@
               "type": "text",
               "settings": {
                 "image": "",
-                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
                 "customer_name": "John Doe",
                 "link": "",
                 "stars": 5
@@ -1981,36 +1969,30 @@
             "text--testimonials-0",
             "text--testimonials-1"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "collection--collection-list": {
           "type": "collection--collection-list",
           "blocks": {
             "collection--collection-list-0": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "collection--collection-list-1": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "collection--collection-list-2": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "collection--collection-list-3": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "collection--collection-list-4": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -2037,23 +2019,19 @@
           "blocks": {
             "image--gallery-0": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image--gallery-1": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image--gallery-2": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image--gallery-3": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -2132,7 +2110,7 @@
               "type": "text",
               "settings": {
                 "title": "Contact us",
-                "richtext": "<p>Shorditch High Street<br>London, UK<br>L1 3HG<\/p>\n<p><\/p>\n<p>enquiry@cannes.com<\/p>"
+                "richtext": "<p>Shorditch High Street<br>London, UK<br>L1 3HG</p>\n<p></p>\n<p>enquiry@cannes.com</p>"
               }
             },
             "footer-1": {
@@ -2162,8 +2140,7 @@
             "footer-2",
             "footer-3"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "template--product": {
           "type": "template--product",
@@ -2196,7 +2173,7 @@
               "type": "image",
               "settings": {
                 "button_label": "Shop now",
-                "button_link": "shopify:\/\/collections",
+                "button_link": "shopify://collections",
                 "captionHorizontal": "right",
                 "captionAlignment": "right"
               }
@@ -2256,7 +2233,7 @@
             "gallery-0": {
               "type": "image",
               "settings": {
-                "link": "shopify:\/\/collections\/all",
+                "link": "shopify://collections/all",
                 "subheading": "Subheading",
                 "title": "Title",
                 "overlay-btn-text": "SHOP NOW",
@@ -2267,7 +2244,7 @@
             "gallery-1": {
               "type": "image",
               "settings": {
-                "link": "shopify:\/\/collections\/all",
+                "link": "shopify://collections/all",
                 "subheading": "Subheading",
                 "title": "Title",
                 "overlay-btn-text": "SHOP NOW",
@@ -2278,7 +2255,7 @@
             "gallery-2": {
               "type": "image",
               "settings": {
-                "link": "shopify:\/\/collections\/all",
+                "link": "shopify://collections/all",
                 "subheading": "Subheading",
                 "title": "Title",
                 "overlay-btn-text": "SHOP NOW",
@@ -2289,8 +2266,8 @@
             "gallery-3": {
               "type": "image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/pomme_shoot16794.jpg",
-                "link": "shopify:\/\/products\/juliette-cami",
+                "image": "shopify://shop_images/pomme_shoot16794.jpg",
+                "link": "shopify://products/juliette-cami",
                 "subheading": "£41.00",
                 "title": "Juliette Cami",
                 "overlay-btn-text": "SHOP NOW",
@@ -2316,7 +2293,7 @@
             "gallery-0-0": {
               "type": "image",
               "settings": {
-                "link": "shopify:\/\/collections\/all",
+                "link": "shopify://collections/all",
                 "subheading": "Subheading",
                 "title": "Title",
                 "overlay-btn-text": "SHOP NOW",
@@ -2327,7 +2304,7 @@
             "gallery-0-1": {
               "type": "image",
               "settings": {
-                "link": "shopify:\/\/collections\/all",
+                "link": "shopify://collections/all",
                 "subheading": "Subheading",
                 "title": "Title",
                 "overlay-btn-text": "SHOP NOW",
@@ -2338,7 +2315,7 @@
             "gallery-0-2": {
               "type": "image",
               "settings": {
-                "link": "shopify:\/\/collections\/all",
+                "link": "shopify://collections/all",
                 "subheading": "Subheading",
                 "title": "Title",
                 "overlay-btn-text": "SHOP NOW",
@@ -2349,8 +2326,8 @@
             "gallery-0-3": {
               "type": "image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/pomme_shoot16794.jpg",
-                "link": "shopify:\/\/products\/juliette-cami",
+                "image": "shopify://shop_images/pomme_shoot16794.jpg",
+                "link": "shopify://products/juliette-cami",
                 "subheading": "£41.00",
                 "title": "Juliette Cami",
                 "overlay-btn-text": "SHOP NOW",
@@ -2376,7 +2353,7 @@
             "text--testimonials-0": {
               "type": "text",
               "settings": {
-                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"<\/p>",
+                "testimonial_text": "<p>\"Show off incredible feedback from your customers\"</p>",
                 "customer_name": "John Doe"
               }
             }
@@ -2393,7 +2370,7 @@
           "type": "image--image-with-text",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "shopify://collections"
           }
         },
         "image--image-with-text-1": {
@@ -2401,7 +2378,7 @@
           "settings": {
             "layout": "right",
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "shopify://collections"
           }
         },
         "newsletter--newsletter": {
@@ -2412,8 +2389,7 @@
         },
         "products--featured-product": {
           "type": "products--featured-product",
-          "settings": {
-          }
+          "settings": {}
         },
         "blog--blog-posts": {
           "type": "blog--blog-posts",
@@ -2427,35 +2403,35 @@
             "image--logo-list-0": {
               "type": "logo_image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/Asset_2.png",
+                "image": "shopify://shop_images/Asset_2.png",
                 "link": ""
               }
             },
             "image--logo-list-1": {
               "type": "logo_image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/logo2.png",
+                "image": "shopify://shop_images/logo2.png",
                 "link": ""
               }
             },
             "image--logo-list-2": {
               "type": "logo_image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/logo1.png",
+                "image": "shopify://shop_images/logo1.png",
                 "link": ""
               }
             },
             "image--logo-list-3": {
               "type": "logo_image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/logo3.png",
+                "image": "shopify://shop_images/logo3.png",
                 "link": ""
               }
             },
             "image--logo-list-4": {
               "type": "logo_image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/logo4.png",
+                "image": "shopify://shop_images/logo4.png",
                 "link": ""
               }
             }
@@ -2478,7 +2454,7 @@
             "desktopHeight": "450",
             "mobileHeight": "350",
             "heading--text-size": 38,
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify://collections/all",
             "button_label": "Shop now"
           }
         }
