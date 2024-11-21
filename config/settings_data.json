@@ -512,9 +512,9 @@
       "footer--newsletter": {
         "type": "footer--newsletter",
         "settings": {
-          "show_section": false,
-          "colors": "white",
-          "newsletter_heading": "JOIN THE ESSENTIAL CLUB",
+          "show_section": true,
+          "colors": "accent",
+          "newsletter_heading": "Join our VIP List",
           "newsletter_description": ""
         }
       },
