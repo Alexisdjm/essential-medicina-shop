@@ -991,7 +991,7 @@
         "type": "title",
         "settings": {
           "show_icon": true,
-          "title": "Join our VIP List",
+          "title": "Welcome to our Growing Community",
           "color_title": "#263e6c",
           "margin-top": 30
         }
@@ -1234,7 +1234,7 @@
         "type": "text--rich-text",
         "settings": {
           "colors": "accent",
-          "title": "Welcome to our Growing Community!",
+          "title": "Join our VIP List",
           "text": "<p>Get early access to new and small batch product drops, seasonal and loyal customer discounts, and special recipes and insights from our founders on how to fill your cup!  (We promise never to spam you or sell your data.) </p>",
           "button_label": "",
           "button_link": ""
@@ -1256,11 +1256,11 @@
       "image--image-with-text-1",
       "16246345707b6a6ea9",
       "1624634645dbd50b88",
-      "1625147564ce3a70ac",
       "1625147103fd6cb203",
       "162463477255f12dde",
+      "text_rich_text_6gannm",
       "advanced_layout_custom_html_e3jR9b",
-      "text_rich_text_6gannm"
+      "1625147564ce3a70ac"
     ],
     "blocks": {
       "14060646107696862457": {
