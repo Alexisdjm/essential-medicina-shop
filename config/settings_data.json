@@ -512,7 +512,7 @@
       "footer--newsletter": {
         "type": "footer--newsletter",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "colors": "accent",
           "newsletter_heading": "Join our VIP List",
           "newsletter_description": "<p>Get early access to new and small batch product drops, seasonal and loyal customer discounts, and special recipes and insights from our founders on how to fill your cup! </p>"
@@ -991,7 +991,7 @@
         "type": "title",
         "settings": {
           "show_icon": true,
-          "title": "CONNECT WITH US",
+          "title": "Join our VIP List",
           "color_title": "#263e6c",
           "margin-top": 30
         }
@@ -1213,6 +1213,32 @@
           "button_text": "SHOP ALL",
           "button_url": "shopify://collections/all"
         }
+      },
+      "advanced_layout_custom_html_e3jR9b": {
+        "type": "advanced-layout--custom-html",
+        "blocks": {
+          "html_N8YMfz": {
+            "type": "html",
+            "settings": {
+              "code": "<iframe src=\"https://link.healthmsgsender.com/widget/form/TqkXsoFX8LNCbdvdqRkV\" style=\"width:100%;height:100%;border:none;border-radius:3px\" id=\"inline-TqkXsoFX8LNCbdvdqRkV\" data-layout=\"{'id':'INLINE'}\" data-trigger-type=\"alwaysShow\" data-trigger-value=\"\" data-activation-type=\"alwaysActivated\" data-activation-value=\"\" data-deactivation-type=\"neverDeactivate\" data-deactivation-value=\"\" data-form-name=\"EM Lead Magnet form\" data-height=\"432\" data-layout-iframe-id=\"inline-TqkXsoFX8LNCbdvdqRkV\" data-form-id=\"TqkXsoFX8LNCbdvdqRkV\" title=\"EM Lead Magnet form\">\n</iframe>\n<script src=\"https://link.healthmsgsender.com/js/form_embed.js\"></script>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "html_N8YMfz"
+        ],
+        "settings": {}
+      },
+      "text_rich_text_6gannm": {
+        "type": "text--rich-text",
+        "settings": {
+          "colors": "accent",
+          "title": "Welcome to our Growing Community!",
+          "text": "<p>Get early access to new and small batch product drops, seasonal and loyal customer discounts, and special recipes and insights from our founders on how to fill your cup!  (We promise never to spam you or sell your data.) </p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
@@ -1232,7 +1258,9 @@
       "1624634645dbd50b88",
       "1625147564ce3a70ac",
       "1625147103fd6cb203",
-      "162463477255f12dde"
+      "162463477255f12dde",
+      "advanced_layout_custom_html_e3jR9b",
+      "text_rich_text_6gannm"
     ],
     "blocks": {
       "14060646107696862457": {
