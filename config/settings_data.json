@@ -647,7 +647,7 @@
       "template--collection": {
         "type": "template--collection",
         "settings": {
-          "collection-layout": "sidebar",
+          "collection-layout": "grid",
           "show-collection-description": true,
           "tags_enable": true,
           "collection-show-sort-by": false,
