@@ -92,7 +92,7 @@
           "mobile-menu-logo--enabled": true,
           "enable_search": true,
           "overlay_header_homepage": false,
-          "overlay_header_collection": false,
+          "overlay_header_collection": true,
           "overlay_header_list_collection": false,
           "overlay_header_contact": false,
           "overlay_opacity": 0,
