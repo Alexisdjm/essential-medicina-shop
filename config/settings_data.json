@@ -684,7 +684,7 @@
       "template--page": {
         "type": "template--page",
         "settings": {
-          "page_width": "narrow",
+          "page_width": "full-width",
           "show_sidebar": false
         }
       },
