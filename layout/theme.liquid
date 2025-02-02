@@ -209,24 +209,48 @@
     }
   </script>
   {% include 'revy-bundle-script' %}
-</body><iframe
-  src="https://link.healthmsgsender.com/widget/form/85bJX4KdEhAUyINJnMpN"
-  style="display:none;width:1000%;height:1000%;border:none;border-radius:1px"
-  id="popup-85bJX4KdEhAUyINJnMpN" 
-  data-layout="{'id':'POPUP'}"
-  data-trigger-type="showAfter"
-  data-trigger-value="1"
-  data-activation-type="alwaysActivated"
-  data-activation-value=""
-  data-deactivation-type="neverDeactivate"
-  data-deactivation-value=""
-  data-form-name="Form 24"
-  data-height="1000"
-  data-layout-iframe-id="popup-85bJX4KdEhAUyINJnMpN"
-  data-form-id="85bJX4KdEhAUyINJnMpN"
-  title="Form 24"
-      >
-</iframe>
+</body><!-- Full-Screen Popup Container -->
+<div id="full-screen-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0, 0, 0, 0.8); z-index:10000; justify-content:center; align-items:center;">
+    
+    <!-- Close Button -->
+    <button onclick="closePopup()" style="position:absolute; top:15px; right:20px; background:red; color:white; border:none; padding:10px 15px; font-size:18px; cursor:pointer; border-radius:5px;">
+        ✖ Close
+    </button>
+
+    <!-- Embedded Form -->
+    <iframe
+        src="https://link.healthmsgsender.com/widget/form/85bJX4KdEhAUyINJnMpN"
+        style="width:90vw; height:90vh; border:none; border-radius:10px; background:white;"
+        id="popup-85bJX4KdEhAUyINJnMpN" 
+        data-layout="{'id':'POPUP'}"
+        data-trigger-type="showAfter"
+        data-trigger-value="1"
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Form 24"
+        data-height="608"
+        data-layout-iframe-id="popup-85bJX4KdEhAUyINJnMpN"
+        data-form-id="85bJX4KdEhAUyINJnMpN"
+        title="Form 24"
+    ></iframe>
+
+</div>
+
+<!-- Popup JavaScript -->
 <script src="https://link.healthmsgsender.com/js/form_embed.js"></script>
+<script>
+    function showPopup() {
+        document.getElementById('full-screen-popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('full-screen-popup').style.display = 'none';
+    }
+
+    // Show popup after 1 second
+    setTimeout(showPopup, 1000);
+</script>
 </script>
 </html>
